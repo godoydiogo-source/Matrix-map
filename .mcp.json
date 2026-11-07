@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nudgile": {
+      "type": "http",
+      "url": "https://api.nudgile.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${NUDGILE_PAT}"
+      }
+    }
+  }
+}
