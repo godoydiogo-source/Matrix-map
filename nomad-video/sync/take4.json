@@ -1,0 +1,103 @@
+{
+  "take": 4,
+  "file": "take4.mp4",
+  "model": "medium",
+  "language": "pt",
+  "duration": 5.056,
+  "text": "mapas offline e até uma IA local, tudo funcionando com a internet desligada.",
+  "words": [
+    {
+      "word": "mapas",
+      "start": 0.0,
+      "end": 0.42,
+      "prob": 0.873
+    },
+    {
+      "word": "offline",
+      "start": 0.42,
+      "end": 0.94,
+      "prob": 0.886
+    },
+    {
+      "word": "e",
+      "start": 0.94,
+      "end": 1.44,
+      "prob": 0.891
+    },
+    {
+      "word": "até",
+      "start": 1.44,
+      "end": 1.58,
+      "prob": 0.993
+    },
+    {
+      "word": "uma",
+      "start": 1.58,
+      "end": 1.88,
+      "prob": 0.985
+    },
+    {
+      "word": "IA",
+      "start": 1.88,
+      "end": 2.12,
+      "prob": 0.887
+    },
+    {
+      "word": "local,",
+      "start": 2.12,
+      "end": 2.54,
+      "prob": 0.924
+    },
+    {
+      "word": "tudo",
+      "start": 2.94,
+      "end": 3.1,
+      "prob": 0.991
+    },
+    {
+      "word": "funcionando",
+      "start": 3.1,
+      "end": 3.78,
+      "prob": 0.998
+    },
+    {
+      "word": "com",
+      "start": 3.78,
+      "end": 3.92,
+      "prob": 0.983
+    },
+    {
+      "word": "a",
+      "start": 3.92,
+      "end": 4.08,
+      "prob": 0.997
+    },
+    {
+      "word": "internet",
+      "start": 4.08,
+      "end": 4.32,
+      "prob": 0.897
+    },
+    {
+      "word": "desligada.",
+      "start": 4.32,
+      "end": 4.94,
+      "prob": 0.995
+    }
+  ],
+  "display_words": [
+    "Mapas",
+    "offline",
+    "e",
+    "até",
+    "uma",
+    "IA",
+    "local.",
+    "Tudo",
+    "funcionando",
+    "com",
+    "a",
+    "internet",
+    "desligada."
+  ]
+}

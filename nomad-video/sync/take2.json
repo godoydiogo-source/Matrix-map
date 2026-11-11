@@ -1,0 +1,103 @@
+{
+  "take": 2,
+  "file": "take2.mp4",
+  "model": "medium",
+  "language": "pt",
+  "duration": 5.056,
+  "text": "Sem Google, sem Wikipedia, sem IA, sem mapa, você saberia o que fazer?",
+  "words": [
+    {
+      "word": "Sem",
+      "start": 0.0,
+      "end": 0.38,
+      "prob": 0.323
+    },
+    {
+      "word": "Google,",
+      "start": 0.38,
+      "end": 0.78,
+      "prob": 0.92
+    },
+    {
+      "word": "sem",
+      "start": 1.2,
+      "end": 1.28,
+      "prob": 0.988
+    },
+    {
+      "word": "Wikipedia,",
+      "start": 1.28,
+      "end": 1.88,
+      "prob": 0.741
+    },
+    {
+      "word": "sem",
+      "start": 2.32,
+      "end": 2.4,
+      "prob": 0.983
+    },
+    {
+      "word": "IA,",
+      "start": 2.4,
+      "end": 2.8,
+      "prob": 0.765
+    },
+    {
+      "word": "sem",
+      "start": 3.0,
+      "end": 3.22,
+      "prob": 0.992
+    },
+    {
+      "word": "mapa,",
+      "start": 3.22,
+      "end": 3.6,
+      "prob": 0.792
+    },
+    {
+      "word": "você",
+      "start": 4.1,
+      "end": 4.16,
+      "prob": 0.789
+    },
+    {
+      "word": "saberia",
+      "start": 4.16,
+      "end": 4.48,
+      "prob": 0.978
+    },
+    {
+      "word": "o",
+      "start": 4.48,
+      "end": 4.54,
+      "prob": 0.994
+    },
+    {
+      "word": "que",
+      "start": 4.54,
+      "end": 4.66,
+      "prob": 0.993
+    },
+    {
+      "word": "fazer?",
+      "start": 4.66,
+      "end": 4.86,
+      "prob": 0.998
+    }
+  ],
+  "display_words": [
+    "Sem",
+    "Google.",
+    "Sem",
+    "Wikipédia.",
+    "Sem",
+    "IA.",
+    "Sem",
+    "mapa.",
+    "Você",
+    "saberia",
+    "o",
+    "que",
+    "fazer?"
+  ]
+}

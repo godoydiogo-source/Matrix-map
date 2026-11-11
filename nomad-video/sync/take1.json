@@ -1,0 +1,82 @@
+{
+  "take": 1,
+  "file": "take1.mp4",
+  "model": "medium",
+  "language": "pt",
+  "duration": 4.064,
+  "text": "E se a internet do mundo Parasse por três meses",
+  "words": [
+    {
+      "word": "E",
+      "start": 0.0,
+      "end": 0.34,
+      "prob": 0.609
+    },
+    {
+      "word": "se",
+      "start": 0.34,
+      "end": 0.48,
+      "prob": 0.95
+    },
+    {
+      "word": "a",
+      "start": 0.48,
+      "end": 0.62,
+      "prob": 0.995
+    },
+    {
+      "word": "internet",
+      "start": 0.62,
+      "end": 0.98,
+      "prob": 0.776
+    },
+    {
+      "word": "do",
+      "start": 0.98,
+      "end": 1.26,
+      "prob": 0.996
+    },
+    {
+      "word": "mundo",
+      "start": 1.26,
+      "end": 1.88,
+      "prob": 0.995
+    },
+    {
+      "word": "Parasse",
+      "start": 1.88,
+      "end": 2.96,
+      "prob": 0.411
+    },
+    {
+      "word": "por",
+      "start": 2.96,
+      "end": 3.22,
+      "prob": 0.994
+    },
+    {
+      "word": "três",
+      "start": 3.22,
+      "end": 3.52,
+      "prob": 0.482
+    },
+    {
+      "word": "meses",
+      "start": 3.52,
+      "end": 3.88,
+      "prob": 0.999
+    }
+  ],
+  "display_words": [
+    "E",
+    "se",
+    "a",
+    "internet",
+    "do",
+    "mundo",
+    "parasse",
+    "por",
+    "três",
+    "meses?"
+  ]
+}
