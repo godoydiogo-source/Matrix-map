@@ -1,0 +1,28 @@
+{
+  "name": "reels-caixa-cvp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motion graphics Reels/TikTok 1080x1920 — vazamento Caixa Vida e Previdência (13/11/2026)",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render Reel out/reel-caixa-cvp.mp4 --codec h264 --crf 18 --audio-codec aac --audio-bitrate 192k --color-space bt709 && bash scripts/finalize-mp4.sh out/reel-caixa-cvp.mp4",
+    "build:thumb": "remotion still Thumb out/thumb-caixa-cvp.png --frame 0",
+    "lint": "tsc --noEmit",
+    "srt": "node scripts/make-srt.mjs",
+    "audio": "node scripts/gen-audio.mjs",
+    "fonts": "node scripts/fetch-fonts.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.543",
+    "@remotion/google-fonts": "4.0.543",
+    "@remotion/media-utils": "4.0.543",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "typescript": "5.8.3"
+  }
+}

@@ -1,0 +1,88 @@
+1
+00:00:00,500 --> 00:00:02,400
+Ontem, 12 de novembro,
+
+2
+00:00:02,400 --> 00:00:05,300
+a Caixa Seguridade comunicou um ataque à Caixa Vida e Previdência.
+
+3
+00:00:05,300 --> 00:00:07,000
+Dados de 7,6 milhões de clientes
+
+4
+00:00:07,000 --> 00:00:09,000
+foram copiados para fora do ambiente tecnológico.
+
+5
+00:00:09,200 --> 00:00:10,800
+Vazaram nomes e CPFs
+
+6
+00:00:10,800 --> 00:00:13,600
+e, em parte dos registros, endereço, telefone, e-mail e nascimento.
+
+7
+00:00:13,600 --> 00:00:16,200
+Identificado no dia 6, só foi divulgado ontem.
+
+8
+00:00:16,200 --> 00:00:19,300
+Não há indício de senha ou dado bancário comprometido.
+
+9
+00:00:19,700 --> 00:00:22,400
+No mesmo dia, o Pix e o app da Caixa passaram de mil reclamações às 13 horas,
+
+10
+00:00:22,400 --> 00:00:24,800
+sem relação confirmada com o vazamento.
+
+11
+00:00:24,800 --> 00:00:27,800
+O Outlook teve pico de mais de 7,8 mil reclamações;
+
+12
+00:00:27,800 --> 00:00:31,800
+a Microsoft apontou falha de infraestrutura, não um ataque.
+
+13
+00:00:32,200 --> 00:00:34,800
+Outros incidentes não têm evidência de coordenação.
+
+14
+00:00:34,800 --> 00:00:38,000
+Na sexta, dia 6, queda de energia e um ataque
+
+15
+00:00:38,000 --> 00:00:40,600
+derrubaram os sistemas do Porto de Santos por mais de 96 horas.
+
+16
+00:00:40,600 --> 00:00:44,800
+No dia 3, as UPAs de Cuiabá atenderam no papel após tentativa de ataque à prefeitura.
+
+17
+00:00:45,200 --> 00:00:48,200
+Em 2025, desviaram mais de 800 milhões de reais de contas-reserva no Banco Central
+
+18
+00:00:48,200 --> 00:00:50,600
+com a senha de um funcionário da C&M,
+
+19
+00:00:50,600 --> 00:00:53,300
+paga com 15 mil reais por motoboy.
+
+20
+00:00:53,700 --> 00:00:57,200
+Na prática: a Caixa não pede senha, código ou Pix por WhatsApp ou ligação.
+
+21
+00:00:57,200 --> 00:00:59,300
+Golpistas devem usar esta notícia.
+
+22
+00:00:59,300 --> 00:01:02,200
+Quem teve telefone ou e-mail na base deve receber o aviso oficial.
+

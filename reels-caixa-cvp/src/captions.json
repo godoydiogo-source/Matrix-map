@@ -1,0 +1,29 @@
+[
+  { "start": 0.5,  "end": 2.4,  "text": "Ontem, 12 de novembro,", "hl": ["12 de novembro"] },
+  { "start": 2.4,  "end": 5.3,  "text": "a Caixa Seguridade comunicou um ataque à Caixa Vida e Previdência.", "hl": ["ataque"] },
+  { "start": 5.3,  "end": 7.0,  "text": "Dados de 7,6 milhões de clientes", "hl": ["7,6 milhões"] },
+  { "start": 7.0,  "end": 9.0,  "text": "foram copiados para fora do ambiente tecnológico.", "hl": ["copiados para fora"] },
+
+  { "start": 9.2,  "end": 10.8, "text": "Vazaram nomes e CPFs", "hl": ["nomes e CPFs"] },
+  { "start": 10.8, "end": 13.6, "text": "e, em parte dos registros, endereço, telefone, e-mail e nascimento.", "hl": ["em parte dos registros"] },
+  { "start": 13.6, "end": 16.2, "text": "Identificado no dia 6, só foi divulgado ontem.", "hl": ["dia 6", "ontem"] },
+  { "start": 16.2, "end": 19.3, "text": "Não há indício de senha ou dado bancário comprometido.", "hl": ["Não há indício"] },
+
+  { "start": 19.7, "end": 22.4, "text": "No mesmo dia, o Pix e o app da Caixa passaram de mil reclamações às 13 horas,", "hl": ["mil reclamações"] },
+  { "start": 22.4, "end": 24.8, "text": "sem relação confirmada com o vazamento.", "hl": ["sem relação confirmada"] },
+  { "start": 24.8, "end": 27.8, "text": "O Outlook teve pico de mais de 7,8 mil reclamações;", "hl": ["7,8 mil"] },
+  { "start": 27.8, "end": 31.8, "text": "a Microsoft apontou falha de infraestrutura, não um ataque.", "hl": ["falha de infraestrutura", "não um ataque"] },
+
+  { "start": 32.2, "end": 34.8, "text": "Outros incidentes não têm evidência de coordenação.", "hl": ["não têm evidência de coordenação"] },
+  { "start": 34.8, "end": 38.0, "text": "Na sexta, dia 6, queda de energia e um ataque", "hl": ["dia 6"] },
+  { "start": 38.0, "end": 40.6, "text": "derrubaram os sistemas do Porto de Santos por mais de 96 horas.", "hl": ["96 horas"] },
+  { "start": 40.6, "end": 44.8, "text": "No dia 3, as UPAs de Cuiabá atenderam no papel após tentativa de ataque à prefeitura.", "hl": ["dia 3", "no papel"] },
+
+  { "start": 45.2, "end": 48.2, "text": "Em 2025, desviaram mais de 800 milhões de reais de contas-reserva no Banco Central", "hl": ["800 milhões"] },
+  { "start": 48.2, "end": 50.6, "text": "com a senha de um funcionário da C&M,", "hl": ["C&M"] },
+  { "start": 50.6, "end": 53.3, "text": "paga com 15 mil reais por motoboy.", "hl": ["15 mil reais"] },
+
+  { "start": 53.7, "end": 57.2, "text": "Na prática: a Caixa não pede senha, código ou Pix por WhatsApp ou ligação.", "hl": ["não pede senha"] },
+  { "start": 57.2, "end": 59.3, "text": "Golpistas devem usar esta notícia.", "hl": ["Golpistas"] },
+  { "start": 59.3, "end": 62.2, "text": "Quem teve telefone ou e-mail na base deve receber o aviso oficial.", "hl": ["aviso oficial"] }
+]
