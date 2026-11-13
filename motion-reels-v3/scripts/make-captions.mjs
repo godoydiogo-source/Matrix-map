@@ -91,11 +91,11 @@ const srt = PHRASES.map(([a, b, text], i) => `${i + 1}\n${ts(a)} --> ${ts(b)}\n$
 mkdirSync(join(ROOT, "out"), { recursive: true });
 writeFileSync(join(ROOT, "out", "motion-kit-reel.srt"), srt);
 // --- versão com a cena ao vivo (57 s): frases a partir do corte deslocadas, fala nova no meio ---
-const INSERT_AT = 3.65, INSERT_LEN = 9;
+const INSERT_AT = 3.52, INSERT_LEN = 9;
 const INSERT_PHRASES = [
-  [0.40, 3.90, "Todo mundo pede vídeo pro Claude e recebe slide animado."],
-  [4.15, 6.85, "Eu fui atrás do que faz motion de verdade."],
-  [7.10, 8.50, "Olha o que eu achei."],
+  [0.27, 4.15, "Todo mundo pede vídeo pro Claude e recebe slide animado."],
+  [4.33, 7.26, "Eu fui atrás do que faz motion de verdade."],
+  [7.44, 8.85, "Olha o que eu achei."],
 ];
 const shifted = [
   ...PHRASES.filter(([a]) => a < INSERT_AT),
