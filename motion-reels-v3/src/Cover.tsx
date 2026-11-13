@@ -15,7 +15,7 @@ export const Cover: React.FC = () => {
       </Mono>
       <div style={{ position: "absolute", top: 290, left: 70, right: 70, display: "flex", flexDirection: "column", gap: 6 }}>
         <Title size={280} color={COLORS.lime} style={{ lineHeight: 0.85 }}>20</Title>
-        <Title size={96} color={COLORS.text} style={{ whiteSpace: "nowrap" }}>REPOSITÓRIOS</Title>
+        <Title size={74} color={COLORS.text} style={{ whiteSpace: "nowrap" }}>REPOSITÓRIOS</Title>
         <Title size={84} color={COLORS.text} style={{ marginTop: 28, whiteSpace: "nowrap" }}>MOTION NO</Title>
         <Title size={84} color={COLORS.lime} style={{ whiteSpace: "nowrap" }}>CLAUDE CODE</Title>
       </div>

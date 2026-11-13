@@ -1,0 +1,119 @@
+1
+00:00:00,300 --> 00:00:01,900
+O Claude já escreve código.
+
+2
+00:00:02,000 --> 00:00:03,600
+Falta ele dirigir o motion.
+
+3
+00:00:03,700 --> 00:00:05,600
+Eu juntei 20 repositórios pra isso:
+
+4
+00:00:05,700 --> 00:00:07,000
+skills, motores e complementos,
+
+5
+00:00:07,050 --> 00:00:08,200
+prontos pro Claude Code.
+
+6
+00:00:08,400 --> 00:00:09,400
+Você pede um Reel
+
+7
+00:00:09,450 --> 00:00:10,600
+e o motion sai genérico.
+
+8
+00:00:10,750 --> 00:00:12,050
+Ou um modelo inventa o quadro
+
+9
+00:00:12,100 --> 00:00:12,950
+e erra o texto.
+
+10
+00:00:13,100 --> 00:00:14,250
+Aqui cada frame é código
+
+11
+00:00:14,300 --> 00:00:15,450
+e o Claude aprende o ofício.
+
+12
+00:00:15,600 --> 00:00:17,400
+Remotion faz o vídeo em React.
+
+13
+00:00:17,700 --> 00:00:19,400
+GSAP cuida das timelines.
+
+14
+00:00:19,700 --> 00:00:21,700
+HyperFrames transforma HTML em MP4.
+
+15
+00:00:21,900 --> 00:00:23,900
+Lottie leva a animação leve pra tela.
+
+16
+00:00:24,050 --> 00:00:25,350
+E o Herk Edit Kit corta o silêncio
+
+17
+00:00:25,400 --> 00:00:26,300
+e monta o seu Reel.
+
+18
+00:00:26,550 --> 00:00:27,750
+Aí vem o pulo do gato:
+
+19
+00:00:27,850 --> 00:00:29,250
+o Product Launch Motion.
+
+20
+00:00:29,650 --> 00:00:30,950
+Você cola o link do site
+
+21
+00:00:31,050 --> 00:00:32,500
+e sai um filme de lançamento,
+
+22
+00:00:32,550 --> 00:00:34,250
+com spring, cursor e som no beat.
+
+23
+00:00:34,450 --> 00:00:36,850
+São 10 skills, 4 motores e 6 complementos.
+
+24
+00:00:37,050 --> 00:00:38,650
+Tudo open source, de outros autores.
+
+25
+00:00:38,750 --> 00:00:39,950
+Eu só organizei o kit.
+
+26
+00:00:40,200 --> 00:00:41,700
+Pra começar: abre o Claude Code,
+
+27
+00:00:41,800 --> 00:00:42,950
+instala as skills da lista,
+
+28
+00:00:43,000 --> 00:00:44,300
+e descreve o vídeo que você quer.
+
+29
+00:00:44,500 --> 00:00:45,850
+Quer os 20 links, organizados?
+
+30
+00:00:45,950 --> 00:00:47,300
+Comenta CODE que eu te mando.
