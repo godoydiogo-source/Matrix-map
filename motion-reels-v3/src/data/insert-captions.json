@@ -1,171 +1,171 @@
 [
  {
   "text": "Todo",
-  "startMs": 270,
-  "endMs": 618,
+  "startMs": 200,
+  "endMs": 555,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "mundo",
-  "startMs": 618,
-  "endMs": 1033,
+  "startMs": 555,
+  "endMs": 978,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "pede",
-  "startMs": 1033,
-  "endMs": 1381,
+  "startMs": 978,
+  "endMs": 1333,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "vídeo",
-  "startMs": 1381,
-  "endMs": 1796,
+  "startMs": 1333,
+  "endMs": 1756,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "pro",
-  "startMs": 1796,
-  "endMs": 2077,
+  "startMs": 1756,
+  "endMs": 2043,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "Claude",
-  "startMs": 2077,
-  "endMs": 2559,
+  "startMs": 2043,
+  "endMs": 2534,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "e",
-  "startMs": 2559,
-  "endMs": 2707,
+  "startMs": 2534,
+  "endMs": 2685,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "recebe",
-  "startMs": 2707,
-  "endMs": 3189,
+  "startMs": 2685,
+  "endMs": 3177,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "slide",
-  "startMs": 3189,
-  "endMs": 3604,
+  "startMs": 3177,
+  "endMs": 3600,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "animado.",
-  "startMs": 3604,
-  "endMs": 4152,
+  "startMs": 3600,
+  "endMs": 4159,
   "timestampMs": null,
   "confidence": null,
   "pageBreakAfter": true
  },
  {
   "text": "Eu",
-  "startMs": 4332,
-  "endMs": 4547,
+  "startMs": 4342,
+  "endMs": 4562,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "fui",
-  "startMs": 4547,
-  "endMs": 4828,
+  "startMs": 4562,
+  "endMs": 4848,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "atrás",
-  "startMs": 4828,
-  "endMs": 5243,
+  "startMs": 4848,
+  "endMs": 5272,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "do",
-  "startMs": 5243,
-  "endMs": 5457,
+  "startMs": 5272,
+  "endMs": 5490,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "que",
-  "startMs": 5457,
-  "endMs": 5738,
+  "startMs": 5490,
+  "endMs": 5776,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "faz",
-  "startMs": 5738,
-  "endMs": 6019,
+  "startMs": 5776,
+  "endMs": 6063,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "motion",
-  "startMs": 6019,
-  "endMs": 6501,
+  "startMs": 6063,
+  "endMs": 6554,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "de",
-  "startMs": 6501,
-  "endMs": 6715,
+  "startMs": 6554,
+  "endMs": 6773,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "verdade.",
-  "startMs": 6715,
-  "endMs": 7264,
+  "startMs": 6773,
+  "endMs": 7333,
   "timestampMs": null,
   "confidence": null,
   "pageBreakAfter": true
  },
  {
   "text": "Olha",
-  "startMs": 7444,
-  "endMs": 7792,
+  "startMs": 7516,
+  "endMs": 7871,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "o",
-  "startMs": 7792,
-  "endMs": 7940,
+  "startMs": 7871,
+  "endMs": 8022,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "que",
-  "startMs": 7940,
-  "endMs": 8221,
+  "startMs": 8022,
+  "endMs": 8309,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "eu",
-  "startMs": 8221,
-  "endMs": 8435,
+  "startMs": 8309,
+  "endMs": 8527,
   "timestampMs": null,
   "confidence": null
  },
  {
   "text": "achei.",
-  "startMs": 8435,
-  "endMs": 8850,
+  "startMs": 8527,
+  "endMs": 8950,
   "timestampMs": null,
   "confidence": null,
   "pageBreakAfter": true

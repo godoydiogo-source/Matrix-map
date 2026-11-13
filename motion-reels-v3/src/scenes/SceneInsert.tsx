@@ -21,7 +21,7 @@ export const SceneInsert: React.FC = () => {
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(4,10,16,0.35) 0%, rgba(4,10,16,0) 22%, rgba(4,10,16,0) 62%, rgba(4,10,16,0.55) 100%)", pointerEvents: "none" }} />
       <Kicker color={COLORS.accent} opacity={interpolate(f, [4, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>{INSERT.kicker}</Kicker>
       <Captions data={insertCaptions as never} />
-      <Audio src={staticFile(INSERT.audio)} volume={0.9} />
+      <Audio src={staticFile(INSERT.audio)} volume={1} />
     </AbsoluteFill>
   );
 };

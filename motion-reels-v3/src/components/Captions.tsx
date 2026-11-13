@@ -29,7 +29,7 @@ export const Captions: React.FC<{ bottom?: number; hideAfterFrame?: number; data
   const { fps } = useVideoConfig();
   const ms = (frame / fps) * 1000;
   if (hideAfterFrame !== undefined && frame >= hideAfterFrame) return null;
-  const page = (data ? paginate(data) : pages).find((p) => ms >= p[0].startMs - 120 && ms < p[p.length - 1].endMs + 60);
+  const page = (data ? paginate(data) : pages).find((p) => ms >= p[0].startMs - 60 && ms < p[p.length - 1].endMs + 60);
   if (!page) return null;
 
   const isCode = (t: string) => t.replace(/[^\p{L}]/gu, "") === "CODE";

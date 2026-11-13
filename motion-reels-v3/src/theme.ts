@@ -47,7 +47,7 @@ export const SCENES = {
 // Cena ao vivo inserida (Diogo em câmera, gerada no Higgsfield Seedance 2.5 com lip-sync da VO nova).
 // Entra logo depois do gancho "CÓDIGO → MOTION" e desloca tudo que vem depois em INSERT.durationS.
 export const INSERT = {
-  atS: 3.52,
+  atS: 3.5,
   durationS: 9,
   video: "insert/diogo-9s.mp4", // clipe gerado no Higgsfield (1080×1920)
   audio: "insert/diogo-9s-vo.wav", // fala nova gerada no Voice Studio (voz Diogo v2)

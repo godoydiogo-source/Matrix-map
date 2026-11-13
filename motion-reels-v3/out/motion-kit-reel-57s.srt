@@ -7,15 +7,15 @@ O Claude já escreve código.
 Falta ele dirigir o motion.
 
 3
-00:00:03,790 --> 00:00:07,670
+00:00:03,700 --> 00:00:07,660
 Todo mundo pede vídeo pro Claude e recebe slide animado.
 
 4
-00:00:07,850 --> 00:00:10,780
+00:00:07,840 --> 00:00:10,830
 Eu fui atrás do que faz motion de verdade.
 
 5
-00:00:10,960 --> 00:00:12,370
+00:00:11,010 --> 00:00:12,450
 Olha o que eu achei.
 
 6
