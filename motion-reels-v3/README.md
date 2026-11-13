@@ -19,6 +19,7 @@ Pós-processo recomendado antes de subir (tags bt709 / range limitado / faststar
 ffmpeg -y -i out/motion-kit-reel.mp4 -c:v libx264 -crf 18 -pix_fmt yuv420p \
   -vf "scale=out_color_matrix=bt709:out_range=tv,format=yuv420p,setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709:range=tv" \
   -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+  -af "loudnorm=I=-14:TP=-1.5:LRA=11" \
   -c:a aac -b:a 160k -ar 48000 -movflags +faststart out/motion-kit-reel-final.mp4
 ```
 

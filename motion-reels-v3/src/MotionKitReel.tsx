@@ -121,7 +121,7 @@ export const MotionKitReel: React.FC = () => {
 
       {/* Narração oficial: Voice Studio · voz Diogo v2 → substituir VO_FILE em src/theme.ts */}
       <Sequence name="VO (Diogo v2)" from={0}>
-        <Audio src={staticFile(VO_FILE)} volume={1} />
+        <Audio src={staticFile(VO_FILE)} volume={0.85} />
       </Sequence>
 
       <Sfx cues={buildCues(fps)} />
