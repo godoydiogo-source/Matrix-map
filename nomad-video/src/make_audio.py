@@ -75,17 +75,7 @@ while k < TOTAL:
     place(bed, hat, k + beat / 2, 0.10)
     k += beat
 
-# arpejo (plucks em lá menor pentatônico) a partir da cena 3 para dar movimento
-notes = [220.0, 261.63, 293.66, 329.63, 392.0, 440.0]
-k = scene_t[2]
-step = beat / 2; idx = 0
-pattern = [0, 2, 4, 3, 1, 4, 5, 2]
-while k < TOTAL - 0.8:
-    f = notes[pattern[idx % len(pattern)]] * (1 if idx % 16 < 8 else 0.5)
-    n = int(0.35 * SR); x = np.arange(n) / SR
-    pluck = (np.sin(2 * np.pi * f * x) + 0.3 * np.sin(2 * np.pi * 2 * f * x)) * env_ad(n, 0.003, 0.22, 5)
-    place(bed, pluck, k, 0.12)
-    k += step; idx += 1
+# (arpejo de plucks removido: soava como 'laser' repetitivo; a trilha fica só com pad + pulso + chimbal)
 
 # riser de ruído antes do cartão final
 rise_dur = 1.6; n = int(rise_dur * SR); x = np.arange(n) / SR
