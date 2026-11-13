@@ -5,7 +5,7 @@
   "description": "Motion graphics Reels/TikTok 1080x1920 — vazamento Caixa Vida e Previdência (13/11/2026)",
   "scripts": {
     "start": "remotion studio",
-    "build": "remotion render Reel out/reel-caixa-cvp.mp4 --codec h264 --crf 18 --audio-codec aac --audio-bitrate 192k",
+    "build": "remotion render Reel out/reel-caixa-cvp.mp4 --codec h264 --crf 18 --audio-codec aac --audio-bitrate 192k --color-space bt709 && bash scripts/finalize-mp4.sh out/reel-caixa-cvp.mp4",
     "build:thumb": "remotion still Thumb out/thumb-caixa-cvp.png --frame 0",
     "lint": "tsc --noEmit",
     "srt": "node scripts/make-srt.mjs",
