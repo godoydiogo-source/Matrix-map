@@ -22,14 +22,14 @@ ffmpeg -y -i out/motion-kit-reel.mp4 -c:v libx264 -crf 18 -pix_fmt yuv420p \
   -c:a aac -b:a 160k -ar 48000 -movflags +faststart out/motion-kit-reel-final.mp4
 ```
 
-## Narração (Voice Studio · voz Diogo v2)
+## Narração (Voice Studio · voz Diogo v2) — já encaixada
 
 1. Gere a VO no Voice Studio com a voz **Diogo v2** usando o texto de `docs/roteiro-VO.txt`.
 2. Salve como `public/vo/diogo-v2.wav` (ou .mp3/.m4a).
 3. Em `src/theme.ts`, troque `VO_FILE` para `"vo/diogo-v2.wav"`.
 4. Ajuste os tempos de início/fim de cada frase em `scripts/make-captions.mjs` para bater com a faixa, rode `npm run srt` e `npm run build`.
 
-Enquanto a VO não chega, o render usa `public/vo/vo-placeholder.wav` (silêncio de 48 s) — SFX e legendas já estão no lugar.
+A narração oficial já está em `public/vo/diogo-v2.wav`; `vo-placeholder.wav` fica só como referência de silêncio para testes.
 
 ## Estrutura
 

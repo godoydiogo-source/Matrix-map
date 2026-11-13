@@ -25,9 +25,9 @@ Ambiente: Claude Code (sessão cloud). Nenhum nome de skill foi inventado; a lis
 
 ## Voz
 
-- Servidor de voz disponível na sessão: Higgsfield (MCP). Vozes do usuário encontradas: `Diogo-Godoy-`, `Frank-clone-3`, `Frank-Koji`. **Não existe voz chamada "Diogo v2"** e não há servidor "Voice Studio" conectado.
-- Seguindo o brief ("não troque pela voz de outro serviço, nem apresente outra voz como se fosse a Diogo v2"), a narração **não foi gerada**. O vídeo foi renderizado com placeholder silencioso (`public/vo/vo-placeholder.wav`), SFX completos e legendas no tempo planejado.
-- Ponto de substituição: `src/theme.ts` → `VO_FILE`. Tempos das frases: `scripts/make-captions.mjs` (gera `captions.json` + `.srt`).
+- A narração oficial foi gerada no **Voice Studio local (Mac), voz Diogo v2**, numa sessão do Claude Code rodando no próprio computador (a sessão na nuvem não alcança o Voice Studio). Arquivo: `public/vo/diogo-v2.wav` (48 kHz, mono, fala de 0,3 s a 46,9 s).
+- Tempos de cada frase e início de cada palavra foram medidos na faixa (`scripts/make-captions.mjs` + `scripts/vo-word-starts.json`); as fronteiras das cenas em `src/theme.ts` seguem os silêncios da narração.
+- Nenhum outro TTS ou voz foi usado. O servidor Higgsfield disponível na sessão em nuvem (vozes `Diogo-Godoy-`, `Frank-clone-3`, `Frank-Koji`) não foi utilizado.
 
 ## Identidade visual (revisão a pedido)
 
