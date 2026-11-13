@@ -4,30 +4,32 @@ import captions from "../data/captions.json";
 
 type Cap = { text: string; startMs: number; endMs: number; pageBreakAfter?: boolean };
 
-const pages: Cap[][] = [];
-{
+const paginate = (list: Cap[]): Cap[][] => {
+  const out: Cap[][] = [];
   let cur: Cap[] = [];
-  for (const c of captions as Cap[]) {
+  for (const c of list) {
     cur.push(c);
     if (c.pageBreakAfter) {
-      pages.push(cur);
+      out.push(cur);
       cur = [];
     }
   }
-  if (cur.length) pages.push(cur);
-}
+  if (cur.length) out.push(cur);
+  return out;
+};
+const pages = paginate(captions as Cap[]);
 
 /**
  * Legenda no padrão das peças jornalísticas: caixa escura arredondada na base,
  * frase em branco bold; a palavra falada fica em verde-água, "CODE" em coral.
  * Fica dentro da zona segura (acima dos 250 px da base).
  */
-export const Captions: React.FC<{ bottom?: number; hideAfterFrame?: number }> = ({ bottom = 300, hideAfterFrame }) => {
+export const Captions: React.FC<{ bottom?: number; hideAfterFrame?: number; data?: Cap[] }> = ({ bottom = 300, hideAfterFrame, data }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const ms = (frame / fps) * 1000;
   if (hideAfterFrame !== undefined && frame >= hideAfterFrame) return null;
-  const page = pages.find((p) => ms >= p[0].startMs - 120 && ms < p[p.length - 1].endMs + 180);
+  const page = (data ? paginate(data) : pages).find((p) => ms >= p[0].startMs - 120 && ms < p[p.length - 1].endMs + 180);
   if (!page) return null;
 
   const isCode = (t: string) => t.replace(/[^\p{L}]/gu, "") === "CODE";

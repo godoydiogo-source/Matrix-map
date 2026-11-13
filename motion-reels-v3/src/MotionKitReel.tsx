@@ -1,7 +1,7 @@
 import React from "react";
 import { Audio } from "@remotion/media";
 import { AbsoluteFill, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, SCENES, VO_FILE } from "./theme";
+import { COLORS, DURATION_S, SCENES, VO_FILE } from "./theme";
 import { Background } from "./components/Background";
 import { Captions } from "./components/Captions";
 import { Flash } from "./components/Flash";
@@ -92,7 +92,8 @@ const buildCues = (fps: number): Cue[] => {
 
 const EndFade: React.FC = () => {
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
+  const { fps } = useVideoConfig();
+  const durationInFrames = DURATION_S * fps;
   return <AbsoluteFill style={{ backgroundColor: "#000", opacity: interpolate(frame, [durationInFrames - 12, durationInFrames - 1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), pointerEvents: "none" }} />;
 };
 
