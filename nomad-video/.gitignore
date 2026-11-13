@@ -1,0 +1,4 @@
+# gerados pelo pipeline (reproduzíveis com src/*.sh)
+build/
+clips/
+nohup.out

@@ -1,0 +1,187 @@
+{
+  "take": 3,
+  "file": "take3.mp4",
+  "model": "medium",
+  "language": "pt",
+  "duration": 9.056,
+  "text": "Existe um projeto chamado Project Nomed, é um servidor que roda no seu próprio computador, sem internet, com rikipíria, referências médicas e guias de sobrevivência.",
+  "words": [
+    {
+      "word": "Existe",
+      "start": 0.0,
+      "end": 0.44,
+      "prob": 0.939
+    },
+    {
+      "word": "um",
+      "start": 0.44,
+      "end": 0.64,
+      "prob": 0.992
+    },
+    {
+      "word": "projeto",
+      "start": 0.64,
+      "end": 0.82,
+      "prob": 0.996
+    },
+    {
+      "word": "chamado",
+      "start": 0.82,
+      "end": 1.18,
+      "prob": 0.992
+    },
+    {
+      "word": "Project",
+      "start": 1.18,
+      "end": 1.6,
+      "prob": 0.54
+    },
+    {
+      "word": "Nomed,",
+      "start": 1.6,
+      "end": 2.06,
+      "prob": 0.557
+    },
+    {
+      "word": "é",
+      "start": 3.38,
+      "end": 3.38,
+      "prob": 0.739
+    },
+    {
+      "word": "um",
+      "start": 3.38,
+      "end": 3.54,
+      "prob": 0.989
+    },
+    {
+      "word": "servidor",
+      "start": 3.54,
+      "end": 3.82,
+      "prob": 0.998
+    },
+    {
+      "word": "que",
+      "start": 3.82,
+      "end": 3.96,
+      "prob": 0.993
+    },
+    {
+      "word": "roda",
+      "start": 3.96,
+      "end": 4.14,
+      "prob": 0.985
+    },
+    {
+      "word": "no",
+      "start": 4.14,
+      "end": 4.26,
+      "prob": 0.926
+    },
+    {
+      "word": "seu",
+      "start": 4.26,
+      "end": 4.42,
+      "prob": 0.996
+    },
+    {
+      "word": "próprio",
+      "start": 4.42,
+      "end": 4.62,
+      "prob": 0.943
+    },
+    {
+      "word": "computador,",
+      "start": 4.62,
+      "end": 5.32,
+      "prob": 0.998
+    },
+    {
+      "word": "sem",
+      "start": 5.46,
+      "end": 5.54,
+      "prob": 0.984
+    },
+    {
+      "word": "internet,",
+      "start": 5.54,
+      "end": 6.02,
+      "prob": 0.865
+    },
+    {
+      "word": "com",
+      "start": 6.32,
+      "end": 6.4,
+      "prob": 0.994
+    },
+    {
+      "word": "rikipíria,",
+      "start": 6.4,
+      "end": 7.02,
+      "prob": 0.623
+    },
+    {
+      "word": "referências",
+      "start": 7.3,
+      "end": 7.54,
+      "prob": 0.993
+    },
+    {
+      "word": "médicas",
+      "start": 7.54,
+      "end": 7.96,
+      "prob": 0.998
+    },
+    {
+      "word": "e",
+      "start": 7.96,
+      "end": 8.14,
+      "prob": 0.95
+    },
+    {
+      "word": "guias",
+      "start": 8.14,
+      "end": 8.34,
+      "prob": 0.992
+    },
+    {
+      "word": "de",
+      "start": 8.34,
+      "end": 8.5,
+      "prob": 0.989
+    },
+    {
+      "word": "sobrevivência.",
+      "start": 8.5,
+      "end": 9.02,
+      "prob": 0.997
+    }
+  ],
+  "display_words": [
+    "Existe",
+    "um",
+    "projeto",
+    "chamado",
+    "Project",
+    "NOMAD.",
+    "É",
+    "um",
+    "servidor",
+    "que",
+    "roda",
+    "no",
+    "seu",
+    "próprio",
+    "computador,",
+    "sem",
+    "internet,",
+    "com",
+    "Wikipédia,",
+    "referências",
+    "médicas",
+    "e",
+    "guias",
+    "de",
+    "sobrevivência."
+  ]
+}
