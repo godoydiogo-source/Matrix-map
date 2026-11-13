@@ -1,0 +1,1194 @@
+[
+  {
+    "text": "O",
+    "startMs": 300,
+    "endMs": 426,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Claude",
+    "startMs": 426,
+    "endMs": 837,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "já",
+    "startMs": 837,
+    "endMs": 1020,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "escreve",
+    "startMs": 1020,
+    "endMs": 1489,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "código.",
+    "startMs": 1489,
+    "endMs": 1900,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Falta",
+    "startMs": 2000,
+    "endMs": 2354,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "ele",
+    "startMs": 2354,
+    "endMs": 2594,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "dirigir",
+    "startMs": 2594,
+    "endMs": 3063,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 3063,
+    "endMs": 3189,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "motion.",
+    "startMs": 3189,
+    "endMs": 3600,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Eu",
+    "startMs": 3700,
+    "endMs": 3868,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "juntei",
+    "startMs": 3868,
+    "endMs": 4246,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "20",
+    "startMs": 4246,
+    "endMs": 4414,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "repositórios",
+    "startMs": 4414,
+    "endMs": 5107,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "pra",
+    "startMs": 5107,
+    "endMs": 5327,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "isso:",
+    "startMs": 5327,
+    "endMs": 5600,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "skills,",
+    "startMs": 5700,
+    "endMs": 6004,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "motores",
+    "startMs": 6004,
+    "endMs": 6350,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 6350,
+    "endMs": 6443,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "complementos,",
+    "startMs": 6443,
+    "endMs": 7000,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "prontos",
+    "startMs": 7050,
+    "endMs": 7430,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "pro",
+    "startMs": 7430,
+    "endMs": 7625,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Claude",
+    "startMs": 7625,
+    "endMs": 7959,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Code.",
+    "startMs": 7959,
+    "endMs": 8200,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Você",
+    "startMs": 8400,
+    "endMs": 8677,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "pede",
+    "startMs": 8677,
+    "endMs": 8953,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "um",
+    "startMs": 8953,
+    "endMs": 9123,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Reel",
+    "startMs": 9123,
+    "endMs": 9400,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "e",
+    "startMs": 9450,
+    "endMs": 9551,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 9551,
+    "endMs": 9652,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "motion",
+    "startMs": 9652,
+    "endMs": 9984,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "sai",
+    "startMs": 9984,
+    "endMs": 10177,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "genérico.",
+    "startMs": 10177,
+    "endMs": 10600,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Ou",
+    "startMs": 10750,
+    "endMs": 10883,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "um",
+    "startMs": 10883,
+    "endMs": 11017,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "modelo",
+    "startMs": 11017,
+    "endMs": 11317,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "inventa",
+    "startMs": 11317,
+    "endMs": 11658,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 11658,
+    "endMs": 11750,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "quadro",
+    "startMs": 11750,
+    "endMs": 12050,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "e",
+    "startMs": 12100,
+    "endMs": 12218,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "erra",
+    "startMs": 12218,
+    "endMs": 12498,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 12498,
+    "endMs": 12616,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "texto.",
+    "startMs": 12616,
+    "endMs": 12950,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Aqui",
+    "startMs": 13100,
+    "endMs": 13330,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cada",
+    "startMs": 13330,
+    "endMs": 13560,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "frame",
+    "startMs": 13560,
+    "endMs": 13834,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "é",
+    "startMs": 13834,
+    "endMs": 13932,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "código",
+    "startMs": 13932,
+    "endMs": 14250,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "e",
+    "startMs": 14300,
+    "endMs": 14387,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 14387,
+    "endMs": 14473,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Claude",
+    "startMs": 14473,
+    "endMs": 14757,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "aprende",
+    "startMs": 14757,
+    "endMs": 15080,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 15080,
+    "endMs": 15166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "ofício.",
+    "startMs": 15166,
+    "endMs": 15450,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Remotion",
+    "startMs": 15600,
+    "endMs": 16131,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "faz",
+    "startMs": 16131,
+    "endMs": 16373,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 16373,
+    "endMs": 16500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "vídeo",
+    "startMs": 16500,
+    "endMs": 16858,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "em",
+    "startMs": 16858,
+    "endMs": 17042,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "React.",
+    "startMs": 17042,
+    "endMs": 17400,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "GSAP",
+    "startMs": 17700,
+    "endMs": 18043,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cuida",
+    "startMs": 18043,
+    "endMs": 18451,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "das",
+    "startMs": 18451,
+    "endMs": 18728,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "timelines.",
+    "startMs": 18728,
+    "endMs": 19400,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "HyperFrames",
+    "startMs": 19700,
+    "endMs": 20378,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "transforma",
+    "startMs": 20378,
+    "endMs": 21000,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "HTML",
+    "startMs": 21000,
+    "endMs": 21289,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "em",
+    "startMs": 21289,
+    "endMs": 21467,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "MP4.",
+    "startMs": 21467,
+    "endMs": 21700,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Lottie",
+    "startMs": 21900,
+    "endMs": 22275,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "leva",
+    "startMs": 22275,
+    "endMs": 22546,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 22546,
+    "endMs": 22660,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "animação",
+    "startMs": 22660,
+    "endMs": 23140,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "leve",
+    "startMs": 23140,
+    "endMs": 23410,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "pra",
+    "startMs": 23410,
+    "endMs": 23629,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "tela.",
+    "startMs": 23629,
+    "endMs": 23900,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "E",
+    "startMs": 24050,
+    "endMs": 24128,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 24128,
+    "endMs": 24206,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Herk",
+    "startMs": 24206,
+    "endMs": 24391,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Edit",
+    "startMs": 24391,
+    "endMs": 24576,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Kit",
+    "startMs": 24576,
+    "endMs": 24725,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "corta",
+    "startMs": 24725,
+    "endMs": 24945,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 24945,
+    "endMs": 25023,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "silêncio",
+    "startMs": 25023,
+    "endMs": 25350,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "e",
+    "startMs": 25400,
+    "endMs": 25499,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "monta",
+    "startMs": 25499,
+    "endMs": 25778,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 25778,
+    "endMs": 25877,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "seu",
+    "startMs": 25877,
+    "endMs": 26066,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Reel.",
+    "startMs": 26066,
+    "endMs": 26300,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Aí",
+    "startMs": 26550,
+    "endMs": 26716,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "vem",
+    "startMs": 26716,
+    "endMs": 26933,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 26933,
+    "endMs": 27047,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "pulo",
+    "startMs": 27047,
+    "endMs": 27316,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "do",
+    "startMs": 27316,
+    "endMs": 27481,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "gato:",
+    "startMs": 27481,
+    "endMs": 27750,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "o",
+    "startMs": 27850,
+    "endMs": 27974,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Product",
+    "startMs": 27974,
+    "endMs": 28437,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Launch",
+    "startMs": 28437,
+    "endMs": 28844,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Motion.",
+    "startMs": 28844,
+    "endMs": 29250,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Você",
+    "startMs": 29650,
+    "endMs": 29908,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cola",
+    "startMs": 29908,
+    "endMs": 30166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 30166,
+    "endMs": 30275,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "link",
+    "startMs": 30275,
+    "endMs": 30533,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "do",
+    "startMs": 30533,
+    "endMs": 30692,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "site",
+    "startMs": 30692,
+    "endMs": 30950,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "e",
+    "startMs": 31050,
+    "endMs": 31156,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "sai",
+    "startMs": 31156,
+    "endMs": 31357,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "um",
+    "startMs": 31357,
+    "endMs": 31511,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "filme",
+    "startMs": 31511,
+    "endMs": 31809,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "de",
+    "startMs": 31809,
+    "endMs": 31962,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "lançamento,",
+    "startMs": 31962,
+    "endMs": 32500,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "com",
+    "startMs": 32550,
+    "endMs": 32764,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "spring,",
+    "startMs": 32764,
+    "endMs": 33130,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cursor",
+    "startMs": 33130,
+    "endMs": 33497,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 33497,
+    "endMs": 33609,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "som",
+    "startMs": 33609,
+    "endMs": 33822,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "no",
+    "startMs": 33822,
+    "endMs": 33985,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "beat.",
+    "startMs": 33985,
+    "endMs": 34250,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "São",
+    "startMs": 34450,
+    "endMs": 34687,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "10",
+    "startMs": 34687,
+    "endMs": 34867,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "skills,",
+    "startMs": 34867,
+    "endMs": 35273,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "4",
+    "startMs": 35273,
+    "endMs": 35396,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "motores",
+    "startMs": 35396,
+    "endMs": 35858,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 35858,
+    "endMs": 35982,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "6",
+    "startMs": 35982,
+    "endMs": 36106,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "complementos.",
+    "startMs": 36106,
+    "endMs": 36850,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Tudo",
+    "startMs": 37050,
+    "endMs": 37280,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "open",
+    "startMs": 37280,
+    "endMs": 37510,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "source,",
+    "startMs": 37510,
+    "endMs": 37828,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "de",
+    "startMs": 37828,
+    "endMs": 37969,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "outros",
+    "startMs": 37969,
+    "endMs": 38288,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "autores.",
+    "startMs": 38288,
+    "endMs": 38650,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Eu",
+    "startMs": 38750,
+    "endMs": 38917,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "só",
+    "startMs": 38917,
+    "endMs": 39084,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "organizei",
+    "startMs": 39084,
+    "endMs": 39616,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 39616,
+    "endMs": 39731,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "kit.",
+    "startMs": 39731,
+    "endMs": 39950,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Pra",
+    "startMs": 40200,
+    "endMs": 40396,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "começar:",
+    "startMs": 40396,
+    "endMs": 40778,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "abre",
+    "startMs": 40778,
+    "endMs": 41020,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 41020,
+    "endMs": 41122,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Claude",
+    "startMs": 41122,
+    "endMs": 41458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Code,",
+    "startMs": 41458,
+    "endMs": 41700,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "instala",
+    "startMs": 41800,
+    "endMs": 42137,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "as",
+    "startMs": 42137,
+    "endMs": 42268,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "skills",
+    "startMs": 42268,
+    "endMs": 42564,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "da",
+    "startMs": 42564,
+    "endMs": 42695,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "lista,",
+    "startMs": 42695,
+    "endMs": 42950,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "e",
+    "startMs": 43000,
+    "endMs": 43083,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "descreve",
+    "startMs": 43083,
+    "endMs": 43431,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 43431,
+    "endMs": 43514,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "vídeo",
+    "startMs": 43514,
+    "endMs": 43748,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "que",
+    "startMs": 43748,
+    "endMs": 43907,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "você",
+    "startMs": 43907,
+    "endMs": 44103,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "quer.",
+    "startMs": 44103,
+    "endMs": 44300,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Quer",
+    "startMs": 44500,
+    "endMs": 44734,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "os",
+    "startMs": 44734,
+    "endMs": 44878,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "20",
+    "startMs": 44878,
+    "endMs": 45022,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "links,",
+    "startMs": 45022,
+    "endMs": 45301,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "organizados?",
+    "startMs": 45301,
+    "endMs": 45850,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  },
+  {
+    "text": "Comenta",
+    "startMs": 45950,
+    "endMs": 46317,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "CODE",
+    "startMs": 46317,
+    "endMs": 46549,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "que",
+    "startMs": 46549,
+    "endMs": 46737,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "eu",
+    "startMs": 46737,
+    "endMs": 46880,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "te",
+    "startMs": 46880,
+    "endMs": 47023,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "mando.",
+    "startMs": 47023,
+    "endMs": 47300,
+    "timestampMs": null,
+    "confidence": null,
+    "pageBreakAfter": true
+  }
+]

@@ -1,0 +1,4 @@
+node_modules/
+out/frames/
+out/*.mp4
+.remotion/
