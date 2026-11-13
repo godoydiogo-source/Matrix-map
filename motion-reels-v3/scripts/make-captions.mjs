@@ -1,7 +1,7 @@
 // Fonte única de verdade do roteiro: frases com janela de tempo (s) → palavras com timing (peso por caracteres).
 // Gera src/data/captions.json (legendas queimadas, palavra ativa) e out/motion-kit-reel.srt.
 // Quando a VO real (Voice Studio, voz Diogo v2) chegar, ajuste só os tempos de início/fim de cada frase aqui e rode `npm run srt`.
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -48,21 +48,37 @@ export const PHRASES = [
   [45.40, 46.89, "Comenta CODE que eu te mando."],
 ];
 
+// Início de cada palavra medido na VO (transcrição com timestamps da faixa diogo-v2.wav), uma lista por frase de PHRASES.
+// Com a lista presente (mesmo nº de palavras, dentro da janela da frase), o destaque segue a fala palavra a palavra;
+// sem ela (null, ou frase reeditada), cai no rateio por número de caracteres dentro da janela.
+const STARTS_FILE = join(ROOT, "scripts", "vo-word-starts.json");
+const WORD_STARTS = existsSync(STARTS_FILE) ? JSON.parse(readFileSync(STARTS_FILE, "utf8")) : [];
+
 const captions = [];
-for (const [start, end, text] of PHRASES) {
+let measured = 0;
+PHRASES.forEach(([start, end, text], p) => {
   const words = text.split(" ");
-  const weights = words.map((w) => w.replace(/[^\p{L}\p{N}]/gu, "").length + 1.2);
-  const total = weights.reduce((a, b) => a + b, 0);
-  let t = start;
-  const items = words.map((w, i) => {
-    const dur = ((end - start) * weights[i]) / total;
-    const item = { text: w, startMs: Math.round(t * 1000), endMs: Math.round((t + dur) * 1000), timestampMs: null, confidence: null };
-    t += dur;
-    return item;
-  });
+  const ms = WORD_STARTS[p];
+  const usable = Array.isArray(ms) && ms.length === words.length && ms.every((t, i) => t < end && (i === 0 ? t >= start - 0.02 : t > ms[i - 1]));
+  let bounds;
+  if (usable) {
+    measured++;
+    bounds = words.map((_, i) => [i === 0 ? start : ms[i], i === words.length - 1 ? end : ms[i + 1]]);
+  } else {
+    const weights = words.map((w) => w.replace(/[^\p{L}\p{N}]/gu, "").length + 1.2);
+    const total = weights.reduce((x, y) => x + y, 0);
+    let t = start;
+    bounds = weights.map((wt) => {
+      const dur = ((end - start) * wt) / total;
+      const b = [t, t + dur];
+      t += dur;
+      return b;
+    });
+  }
+  const items = words.map((w, i) => ({ text: w, startMs: Math.round(bounds[i][0] * 1000), endMs: Math.round(bounds[i][1] * 1000), timestampMs: null, confidence: null }));
   items[items.length - 1].pageBreakAfter = true;
   captions.push(...items);
-}
+});
 mkdirSync(join(ROOT, "src", "data"), { recursive: true });
 writeFileSync(join(ROOT, "src", "data", "captions.json"), JSON.stringify(captions, null, 2));
 
@@ -74,4 +90,4 @@ const ts = (s) => {
 const srt = PHRASES.map(([a, b, text], i) => `${i + 1}\n${ts(a)} --> ${ts(b)}\n${text}\n`).join("\n");
 mkdirSync(join(ROOT, "out"), { recursive: true });
 writeFileSync(join(ROOT, "out", "motion-kit-reel.srt"), srt);
-console.log(`captions.json: ${captions.length} palavras · SRT: ${PHRASES.length} blocos · fim ${PHRASES.at(-1)[1]}s`);
+console.log(`captions.json: ${captions.length} palavras (${measured}/${PHRASES.length} frases com tempo medido por palavra) · SRT: ${PHRASES.length} blocos · fim ${PHRASES.at(-1)[1]}s`);
