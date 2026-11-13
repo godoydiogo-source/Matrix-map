@@ -35,15 +35,14 @@ export const DURATION_S = 48;
 
 // Fronteiras de bloco (em segundos) — flash lima entre blocos.
 export const SCENES = {
-  hook: [0, 8],
-  pain: [8, 15],
-  demo: [15, 26],
-  climax: [26, 34],
-  consolidate: [34, 40],
-  steps: [40, 44],
-  cta: [44, 48],
+  hook: [0, 8.5],
+  pain: [8.5, 15.6],
+  demo: [15.6, 25.6],
+  climax: [25.6, 32.6],
+  consolidate: [32.6, 38.75],
+  steps: [38.75, 43.55],
+  cta: [43.55, 48],
 } as const;
 
-// Ponto de substituição da narração: gere a VO no Voice Studio (voz Diogo v2),
-// salve em public/vo/diogo-v2.wav e troque o nome abaixo.
-export const VO_FILE = "vo/vo-placeholder.wav";
+// Narração oficial: Voice Studio, voz Diogo v2. As fronteiras de SCENES acima seguem esta faixa.
+export const VO_FILE = "vo/diogo-v2.wav";

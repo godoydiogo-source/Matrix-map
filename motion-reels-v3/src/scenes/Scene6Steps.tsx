@@ -16,7 +16,7 @@ export const Scene6Steps: React.FC = () => {
       {/* trilho vertical */}
       <div style={{ position: "absolute", top: 330, left: 132, width: 2, height: 760 * rail, backgroundColor: COLORS.accentDim, opacity: 0.5 }} />
       {STEPS.map((s, i) => {
-        const p = snapIn(f, 6 + i * 34);
+        const p = snapIn(f, 6 + i * 46);
         return (
           <div key={s} style={{ position: "absolute", top: 300 + i * 290, left: 90, right: 90, display: "flex", alignItems: "center", gap: 28, opacity: Math.min(1, p * 1.5), scale: String(0.9 + 0.1 * p), translate: `${(1 - p) * 80}px 0px`, transformOrigin: "left center" }}>
             <div style={{ width: 124, display: "flex", flexDirection: "column", alignItems: "center", gap: 10, flex: "none" }}>

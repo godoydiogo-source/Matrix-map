@@ -6,7 +6,8 @@ import { Card, Mono, Title } from "../components/Card";
 import { Rack } from "../components/Rack";
 import { Kicker } from "../components/Marks";
 
-export const SEG = 66; // frames por mini-demo
+// Frame (relativo à cena) em que cada mini-demo entra — casado com o início de cada frase na VO.
+export const DEMO_STARTS = [0, 52, 100, 160, 219];
 const DEMOS = ["Remotion", "GSAP", "HyperFrames", "Lottie", "Herk Edit Kit"];
 const CAPTION = ["React → vídeo 9:16", "timelines no beat", "HTML → MP4", "JSON → movimento", "corta o silêncio"];
 
@@ -40,7 +41,7 @@ const RemotionDemo: React.FC<{ t: number }> = ({ t }) => {
 
 /* 2 — GSAP: timeline com playhead arrasta shapes no beat */
 const GsapDemo: React.FC<{ t: number }> = ({ t }) => {
-  const head = lin(t, 8, 50, [0, 1]);
+  const head = lin(t, 6, 40, [0, 1]);
   const marks = [0.12, 0.38, 0.64, 0.9];
   const shapes = ["circle", "square", "tri"] as const;
   return (
@@ -146,8 +147,8 @@ const demos = [RemotionDemo, GsapDemo, HyperframesDemo, LottieDemo, HerkDemo];
 
 export const Scene3Demo: React.FC = () => {
   const f = useCurrentFrame();
-  const k = Math.min(demos.length - 1, Math.floor(f / SEG));
-  const t = f - k * SEG;
+  const k = Math.max(0, DEMO_STARTS.filter((s) => f >= s).length - 1);
+  const t = f - DEMO_STARTS[k];
   const Demo = demos[k];
   const enter = snapIn(t, 0);
 

@@ -8,7 +8,7 @@ import { Flash } from "./components/Flash";
 import { Cue, Sfx } from "./components/Sfx";
 import { Scene1Hook } from "./scenes/Scene1Hook";
 import { Scene2Pain } from "./scenes/Scene2Pain";
-import { Scene3Demo } from "./scenes/Scene3Demo";
+import { DEMO_STARTS, Scene3Demo } from "./scenes/Scene3Demo";
 import { Scene4Climax } from "./scenes/Scene4Climax";
 import { Scene5Consolidate } from "./scenes/Scene5Consolidate";
 import { Scene6Steps } from "./scenes/Scene6Steps";
@@ -46,16 +46,16 @@ const buildCues = (fps: number): Cue[] => {
   for (let i = 0; i < 3; i++) add(S2 + 160 + i * 12, "snap", 0.7);
 
   // CENA 3 — cinco módulos encaixam; mini-demos
-  for (let i = 0; i < 5; i++) add(S3 + i * 66, "snap", 0.85);
+  for (const d of DEMO_STARTS) add(S3 + d, "snap", 0.85);
   for (const t of range(4, 30, 4)) add(S3 + t, "type", 0.22); // Remotion
   add(S3 + 26, "click", 0.6);
-  for (const m of [0.12, 0.38, 0.64, 0.9]) add(S3 + 66 + Math.round(8 + m * 50), "pulse", 0.6); // GSAP
-  for (const t of range(4, 26, 4)) add(S3 + 132 + t, "type", 0.22); // HyperFrames
-  add(S3 + 132 + 30, "whoosh", 0.5);
-  add(S3 + 132 + 52, "pop", 0.6);
-  for (const t of range(4, 24, 4)) add(S3 + 198 + t, "type", 0.22); // Lottie
-  add(S3 + 264 + 28, "cut", 0.7); // Herk
-  add(S3 + 264 + 40, "whoosh", 0.4);
+  for (const m of [0.12, 0.38, 0.64, 0.9]) add(S3 + DEMO_STARTS[1] + Math.round(6 + m * 40), "pulse", 0.6); // GSAP
+  for (const t of range(4, 26, 4)) add(S3 + DEMO_STARTS[2] + t, "type", 0.22); // HyperFrames
+  add(S3 + DEMO_STARTS[2] + 30, "whoosh", 0.5);
+  add(S3 + DEMO_STARTS[2] + 52, "pop", 0.6);
+  for (const t of range(4, 24, 4)) add(S3 + DEMO_STARTS[3] + t, "type", 0.22); // Lottie
+  add(S3 + DEMO_STARTS[4] + 28, "cut", 0.7); // Herk
+  add(S3 + DEMO_STARTS[4] + 40, "whoosh", 0.4);
 
   // CENA 4 — módulo avança, URL digitada, enter, cursor clica, filme pousa, beats
   add(S4 + 0, "whoosh", 0.6);
@@ -78,7 +78,7 @@ const buildCues = (fps: number): Cue[] => {
   add(S5 + 138, "snap", 0.8);
 
   // CENA 6 — três passos
-  for (let i = 0; i < 3; i++) add(S6 + 6 + i * 34, "snap", 0.8);
+  for (let i = 0; i < 3; i++) add(S6 + 6 + i * 46, "snap", 0.8);
 
   // CENA 7 — digita CODE, DM chega, card final + send
   for (let i = 0; i < 4; i++) add(S7 + 4 + i * 5, "type", 0.5);
@@ -120,7 +120,7 @@ export const MotionKitReel: React.FC = () => {
       <Flash at={flashes} />
 
       {/* Narração oficial: Voice Studio · voz Diogo v2 → substituir VO_FILE em src/theme.ts */}
-      <Sequence name="VO (Diogo v2 — placeholder)" from={0}>
+      <Sequence name="VO (Diogo v2)" from={0}>
         <Audio src={staticFile(VO_FILE)} volume={1} />
       </Sequence>
 
