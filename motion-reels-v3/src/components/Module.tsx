@@ -2,7 +2,7 @@ import React from "react";
 import { COLORS, FONTS } from "../theme";
 
 /** Ícone geométrico genérico por índice (sem logos oficiais). */
-export const Glyph: React.FC<{ i: number; size?: number; color?: string }> = ({ i, size = 22, color = COLORS.violet }) => {
+export const Glyph: React.FC<{ i: number; size?: number; color?: string }> = ({ i, size = 22, color = COLORS.muted }) => {
   const k = i % 6;
   const common: React.CSSProperties = { width: size, height: size, flex: "none" };
   if (k === 0) return <div style={{ ...common, borderRadius: "50%", border: `3px solid ${color}` }} />;
@@ -27,17 +27,16 @@ type Props = {
 /** Módulo do rack: superfície escura, canto vivo, nome em mono. Acende em lima quando citado. */
 export const Module: React.FC<Props> = ({ name, index, lit = false, width = 300, height = 86, fontSize = 26, progress = 1, style }) => {
   const l = typeof lit === "number" ? lit : lit ? 1 : 0;
-  const border = l > 0.01 ? COLORS.lime : COLORS.line;
+  const border = l > 0.01 ? COLORS.accent : "#243039";
   return (
     <div
       style={{
         width,
         height,
         backgroundColor: COLORS.surface,
-        border: `2px solid ${border}`,
-        borderRadius: 6,
-        borderTopLeftRadius: 0, // canto vivo
-        boxShadow: l > 0.01 ? `0 0 ${28 * l}px rgba(214,255,63,${0.45 * l}), inset 0 0 0 1px rgba(214,255,63,${0.3 * l})` : "0 10px 30px rgba(0,0,0,0.35)",
+        border: `1px solid ${border}`,
+        borderRadius: 10,
+        boxShadow: l > 0.01 ? `0 0 ${22 * l}px rgba(0,230,204,${0.28 * l}), inset 0 0 0 1px rgba(0,230,204,${0.5 * l})` : "0 8px 24px rgba(0,0,0,0.35)",
         display: "flex",
         alignItems: "center",
         gap: Math.round(fontSize * 0.45),
@@ -48,13 +47,13 @@ export const Module: React.FC<Props> = ({ name, index, lit = false, width = 300,
         ...style,
       }}
     >
-      <Glyph i={index} color={l > 0.01 ? COLORS.lime : COLORS.violet} size={Math.round(fontSize * 0.7)} />
+      <Glyph i={index} color={l > 0.01 ? COLORS.accent : COLORS.accentDim} size={Math.round(fontSize * 0.7)} />
       <div
         style={{
           fontFamily: FONTS.mono,
           fontWeight: 700,
           fontSize,
-          color: l > 0.01 ? COLORS.lime : COLORS.text,
+          color: l > 0.01 ? COLORS.accent : COLORS.text,
           whiteSpace: "nowrap",
           overflow: "hidden",
           textOverflow: "ellipsis",

@@ -1,6 +1,6 @@
 # Motion Reels v3 — kit de 20 repositórios de motion pro Claude Code
 
-Reel 1080×1920 · 30 fps · 48 s · Remotion (React). Peça original de divulgação: bancada modular escura, 20 módulos em três fileiras (Skills / Motores / Complementos), CTA único "COMENTA CODE".
+Reel 1080×1920 · 30 fps · 48 s · Remotion (React). Peça original de divulgação: bancada modular escura, 20 módulos em três fileiras (Skills / Motores / Complementos), CTA único "COMENTA CODE". Identidade visual igual às peças jornalísticas do canal: azul-preto `#040A10`, verde-água `#00E6CC`, coral `#FF3A5C`, Inter Tight (títulos) + JetBrains Mono (labels, repos, CODE).
 
 ## Rodar
 
@@ -39,5 +39,6 @@ Enquanto a VO não chega, o render usa `public/vo/vo-placeholder.wav` (silêncio
 - `src/data/repos.ts` — os 20 repositórios por categoria · `src/data/captions.json` — legendas por palavra
 - `scripts/make-sfx.mjs` — SFX sintetizados (snap, tick, whoosh, click, type, flash, send, pulse, dock, cut, pop)
 - `scripts/make-captions.mjs` — fonte única do roteiro com tempos → captions + SRT
-- `public/fonts/` — Syne e JetBrains Mono (OFL) servidas localmente
+- `public/fonts/` — Inter Tight e JetBrains Mono (OFL) servidas localmente
+- `src/components/Marks.tsx` — check verde-água, X coral e kicker mono (padrão das peças jornalísticas)
 - `docs/DM-lista-CODE.md` — texto da DM com os 20 links · `docs/NOTA-skills-usadas.md` — skills carregadas

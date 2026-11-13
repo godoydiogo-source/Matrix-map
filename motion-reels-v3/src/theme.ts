@@ -3,24 +3,26 @@ import { staticFile } from "remotion";
 import manifest from "../public/fonts/manifest.json";
 
 export const COLORS = {
-  bg: "#08060E",
-  text: "#F4F0E6",
-  lime: "#D6FF3F",
-  violet: "#8B6CFF",
-  surface: "#14121C",
-  magenta: "#FF3D8F",
-  dim: "rgba(244,240,230,0.55)",
-  line: "rgba(139,108,255,0.28)",
+  bg: "#040A10",        // azul-preto das peças jornalísticas
+  text: "#F2F5F7",
+  accent: "#00E6CC",    // verde-água (destaque, palavra ativa, check)
+  accentDim: "#00B4A0",
+  alert: "#FF3A5C",     // coral (alerta; aqui só no CODE e no card final)
+  muted: "#8A96A0",     // labels mono em cinza
+  surface: "#0B1319",   // cards
+  line: "#1B262E",      // bordas finas
+  dim: "rgba(242,245,247,0.6)",
+  capBox: "rgba(5,10,15,0.88)",
 } as const;
 
-// Fontes livres servidas localmente (public/fonts) — Syne (títulos) e JetBrains Mono (repos, contagens, CODE).
+// Fontes livres servidas localmente (public/fonts) — Inter Tight (títulos, caixa alta) e JetBrains Mono (repos, contagens, CODE).
 // manifest.json: [família, peso, subset, arquivo, unicode-range]
 for (const [family, weight, , file, unicodeRange] of manifest as [string, string, string, string, string][]) {
   loadFont({ family, url: staticFile(`fonts/${file}`), weight, unicodeRange, format: "woff2" });
 }
 
 export const FONTS = {
-  title: "'Syne', 'Instrument Sans', sans-serif",
+  title: "'Inter Tight', 'Inter', sans-serif",
   mono: "'JetBrains Mono', 'IBM Plex Mono', monospace",
 } as const;
 

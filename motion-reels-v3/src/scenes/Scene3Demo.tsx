@@ -4,6 +4,7 @@ import { COLORS, FONTS } from "../theme";
 import { easeInOut, easeOut, lin, snapIn } from "../components/anim";
 import { Card, Mono, Title } from "../components/Card";
 import { Rack } from "../components/Rack";
+import { Kicker } from "../components/Marks";
 
 export const SEG = 66; // frames por mini-demo
 const DEMOS = ["Remotion", "GSAP", "HyperFrames", "Lottie", "Herk Edit Kit"];
@@ -23,15 +24,15 @@ const RemotionDemo: React.FC<{ t: number }> = ({ t }) => {
   return (
     <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", padding: "80px 40px 30px", gap: 30 }}>
       <Code lines={lines} typed={typed} />
-      <Title size={64} color={COLORS.lime} style={{ opacity: lin(t, 24, 6) }}>→</Title>
-      <div style={{ position: "relative", width: 230, height: 408, border: `3px solid ${COLORS.lime}`, borderRadius: 14, overflow: "hidden", backgroundColor: COLORS.bg, opacity: lin(t, 24, 8) }}>
+      <Title size={64} color={COLORS.accent} style={{ opacity: lin(t, 24, 6) }}>→</Title>
+      <div style={{ position: "relative", width: 230, height: 408, border: `3px solid ${COLORS.accent}`, borderRadius: 14, overflow: "hidden", backgroundColor: COLORS.bg, opacity: lin(t, 24, 8) }}>
         {[0, 1, 2].map((i) => (
-          <div key={i} style={{ position: "absolute", left: 26, right: 26, top: 60 + i * 90, height: 56, borderRadius: 6, backgroundColor: i === 1 ? COLORS.lime : COLORS.violet, scale: `${snapIn(t, 30 + i * 6)} 1`, transformOrigin: "left center" }} />
+          <div key={i} style={{ position: "absolute", left: 26, right: 26, top: 60 + i * 90, height: 56, borderRadius: 6, backgroundColor: i === 1 ? COLORS.accent : COLORS.muted, scale: `${snapIn(t, 30 + i * 6)} 1`, transformOrigin: "left center" }} />
         ))}
         <Mono size={22} color={COLORS.text} style={{ position: "absolute", bottom: 18, left: 0, right: 0, textAlign: "center" }}>
           render {Math.round(render)}%
         </Mono>
-        <div style={{ position: "absolute", bottom: 0, left: 0, height: 6, width: `${render}%`, backgroundColor: COLORS.lime }} />
+        <div style={{ position: "absolute", bottom: 0, left: 0, height: 6, width: `${render}%`, backgroundColor: COLORS.accent }} />
       </div>
     </div>
   );
@@ -50,8 +51,8 @@ const GsapDemo: React.FC<{ t: number }> = ({ t }) => {
           const start = 8 + marks[i] * 50;
           const p = snapIn(t, start);
           const common: React.CSSProperties = { position: "absolute", top: 20 + i * 70, left: 0, width: 54, height: 54, translate: `${p * 640}px 0px`, rotate: `${p * 180}deg` };
-          if (s === "circle") return <div key={s} style={{ ...common, borderRadius: "50%", backgroundColor: COLORS.lime }} />;
-          if (s === "square") return <div key={s} style={{ ...common, backgroundColor: COLORS.violet, borderRadius: 6 }} />;
+          if (s === "circle") return <div key={s} style={{ ...common, borderRadius: "50%", backgroundColor: COLORS.accent }} />;
+          if (s === "square") return <div key={s} style={{ ...common, backgroundColor: COLORS.muted, borderRadius: 6 }} />;
           return <div key={s} style={{ ...common, width: 0, height: 0, borderLeft: "27px solid transparent", borderRight: "27px solid transparent", borderBottom: `54px solid ${COLORS.text}` }} />;
         })}
       </div>
@@ -59,9 +60,9 @@ const GsapDemo: React.FC<{ t: number }> = ({ t }) => {
       <div style={{ position: "relative", height: 70, marginTop: 10 }}>
         <div style={{ position: "absolute", left: 0, right: 0, top: 32, height: 4, backgroundColor: COLORS.line }} />
         {marks.map((m, i) => (
-          <div key={i} style={{ position: "absolute", left: `${m * 100}%`, top: 22, width: 24, height: 24, rotate: "45deg", backgroundColor: head >= m ? COLORS.lime : COLORS.violet, translate: "-12px 0px" }} />
+          <div key={i} style={{ position: "absolute", left: `${m * 100}%`, top: 22, width: 24, height: 24, rotate: "45deg", backgroundColor: head >= m ? COLORS.accent : COLORS.muted, translate: "-12px 0px" }} />
         ))}
-        <div style={{ position: "absolute", left: `${head * 100}%`, top: 0, width: 4, height: 70, backgroundColor: COLORS.lime, translate: "-2px 0px", boxShadow: "0 0 14px rgba(214,255,63,0.8)" }} />
+        <div style={{ position: "absolute", left: `${head * 100}%`, top: 0, width: 4, height: 70, backgroundColor: COLORS.accent, translate: "-2px 0px", boxShadow: "0 0 14px rgba(0,230,204,0.8)" }} />
       </div>
     </div>
   );
@@ -79,11 +80,11 @@ const HyperframesDemo: React.FC<{ t: number }> = ({ t }) => {
       </div>
       <div style={{ position: "relative", width: 360, height: 440 }}>
         {/* slot da "impressora" */}
-        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 26, backgroundColor: COLORS.violet, borderRadius: 6 }} />
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 26, backgroundColor: COLORS.muted, borderRadius: 6 }} />
         <div style={{ position: "absolute", top: 26, left: 20, right: 20, overflow: "hidden", height: 400 }}>
-          <div style={{ width: "100%", height: 330, translate: `0px ${(print - 1) * 340}px`, backgroundColor: COLORS.bg, border: `3px solid ${COLORS.lime}`, borderRadius: 10, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
-            <div style={{ width: 0, height: 0, borderTop: "34px solid transparent", borderBottom: "34px solid transparent", borderLeft: `56px solid ${COLORS.lime}`, marginLeft: 12 }} />
-            <Mono size={30} color={COLORS.lime} style={{ fontWeight: 700 }}>out.mp4</Mono>
+          <div style={{ width: "100%", height: 330, translate: `0px ${(print - 1) * 340}px`, backgroundColor: COLORS.bg, border: `3px solid ${COLORS.accent}`, borderRadius: 10, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
+            <div style={{ width: 0, height: 0, borderTop: "34px solid transparent", borderBottom: "34px solid transparent", borderLeft: `56px solid ${COLORS.accent}`, marginLeft: 12 }} />
+            <Mono size={30} color={COLORS.accent} style={{ fontWeight: 700 }}>out.mp4</Mono>
             <Mono size={20} color={COLORS.dim}>60 fps · seekable</Mono>
           </div>
         </div>
@@ -104,9 +105,9 @@ const LottieDemo: React.FC<{ t: number }> = ({ t }) => {
         <Code lines={lines} typed={typed} />
       </div>
       <div style={{ position: "relative", width: 400, height: 400, opacity: easeOut(t, 18, 10) }}>
-        <div style={{ position: "absolute", inset: 60, borderRadius: "50%", border: `4px solid ${COLORS.violet}` }} />
+        <div style={{ position: "absolute", inset: 60, borderRadius: "50%", border: `4px solid ${COLORS.muted}` }} />
         {[0, 1, 2].map((i) => (
-          <div key={i} style={{ position: "absolute", left: 200 - 14, top: 200 - 14, width: 28, height: 28, borderRadius: "50%", backgroundColor: COLORS.lime, translate: `${Math.cos(((spin + i * 120) * Math.PI) / 180) * 140}px ${Math.sin(((spin + i * 120) * Math.PI) / 180) * 140}px` }} />
+          <div key={i} style={{ position: "absolute", left: 200 - 14, top: 200 - 14, width: 28, height: 28, borderRadius: "50%", backgroundColor: COLORS.accent, translate: `${Math.cos(((spin + i * 120) * Math.PI) / 180) * 140}px ${Math.sin(((spin + i * 120) * Math.PI) / 180) * 140}px` }} />
         ))}
         <div style={{ position: "absolute", left: 200 - 36, top: 200 - 36, width: 72, height: 72, borderRadius: 12, backgroundColor: COLORS.text, scale: String(0.7 + 0.5 * bounce), rotate: `${spin / 2}deg` }} />
       </div>
@@ -127,13 +128,13 @@ const HerkDemo: React.FC<{ t: number }> = ({ t }) => {
       <div style={{ display: "flex", alignItems: "center", height: 150, marginTop: 28, width: 800 }}>
         {blocks.map((w, i) => (
           <React.Fragment key={i}>
-            <div style={{ width: gaps[i] * (1 - cut), height: 90, flex: "none", backgroundImage: `repeating-linear-gradient(90deg, ${COLORS.violet} 0 4px, transparent 4px 10px)`, opacity: 0.8 * (1 - cut), overflow: "hidden" }} />
-            <div style={{ width: w, height: 40 + ((i * 37) % 70), flex: "none", backgroundColor: i % 2 ? COLORS.text : COLORS.lime, borderRadius: 4 }} />
+            <div style={{ width: gaps[i] * (1 - cut), height: 90, flex: "none", backgroundImage: `repeating-linear-gradient(90deg, ${COLORS.muted} 0 4px, transparent 4px 10px)`, opacity: 0.8 * (1 - cut), overflow: "hidden" }} />
+            <div style={{ width: w, height: 40 + ((i * 37) % 70), flex: "none", backgroundColor: i % 2 ? COLORS.text : COLORS.accent, borderRadius: 4 }} />
           </React.Fragment>
         ))}
       </div>
       <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 36 }}>
-        <div style={{ height: 14, width: totalLen, backgroundColor: COLORS.lime, borderRadius: 7, flex: "none" }} />
+        <div style={{ height: 14, width: totalLen, backgroundColor: COLORS.accent, borderRadius: 7, flex: "none" }} />
         <Mono size={34} color={COLORS.text} style={{ fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>0:{secs}</Mono>
       </div>
       <Mono size={22} color={COLORS.dim} style={{ marginTop: 18 }}>cortes a partir da transcrição · Reel montado</Mono>
@@ -152,12 +153,12 @@ export const Scene3Demo: React.FC = () => {
 
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", top: 200, left: 90, right: 90, display: "flex", alignItems: "baseline", justifyContent: "space-between", opacity: Math.min(1, enter * 1.5) }}>
-        <Title size={68} color={COLORS.lime}>{DEMOS[k]}</Title>
-        <Mono size={24} color={COLORS.dim} style={{ flex: "none", marginLeft: 20 }}>{k + 1} / 5</Mono>
+      <Kicker opacity={Math.min(1, enter * 1.5)}>Demo rápida · {k + 1}/5</Kicker>
+      <div style={{ position: "absolute", top: 230, left: 72, right: 72, opacity: Math.min(1, enter * 1.5) }}>
+        <Title size={72} color={COLORS.text} style={{ textTransform: "uppercase" }}>{DEMOS[k]}</Title>
       </div>
-      <div style={{ position: "absolute", top: 310, left: 90, opacity: Math.min(1, enter * 1.5), scale: String(0.94 + 0.06 * enter), translate: `0px ${(1 - enter) * 50}px` }}>
-        <Card label={CAPTION[k].toUpperCase()} width={900} height={560}>
+      <div style={{ position: "absolute", top: 330, left: 90, opacity: Math.min(1, enter * 1.5), scale: String(0.94 + 0.06 * enter), translate: `0px ${(1 - enter) * 50}px` }}>
+        <Card label={CAPTION[k]} width={900} height={560} accent={COLORS.accent}>
           <Demo t={t} />
         </Card>
       </div>
@@ -166,7 +167,7 @@ export const Scene3Demo: React.FC = () => {
         <Rack scale={0.78} labels={false} rowGap={14} dim={0.9} litNames={[DEMOS[k] === "Lottie" ? "Lottie" : DEMOS[k]]} />
       </div>
       {/* vinheta leve para não brigar com o cartão */}
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 55%, rgba(8,6,14,0.55) 100%)", pointerEvents: "none", opacity: interpolate(f, [0, 10], [0, 1], { extrapolateRight: "clamp" }) }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 55%, rgba(4,10,16,0.55) 100%)", pointerEvents: "none", opacity: interpolate(f, [0, 10], [0, 1], { extrapolateRight: "clamp" }) }} />
     </AbsoluteFill>
   );
 };

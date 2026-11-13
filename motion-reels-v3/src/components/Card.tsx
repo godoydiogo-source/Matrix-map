@@ -9,16 +9,15 @@ export const Card: React.FC<{
   accent?: string;
   style?: React.CSSProperties;
   children?: React.ReactNode;
-}> = ({ label, width = 900, height = 620, accent = COLORS.lime, style, children }) => {
+}> = ({ label, width = 900, height = 620, accent = COLORS.muted, style, children }) => {
   return (
     <div
       style={{
         width,
         height,
         backgroundColor: COLORS.surface,
-        border: `2px solid ${COLORS.line}`,
-        borderRadius: 18,
-        borderTopLeftRadius: 0,
+        border: `1px solid #243039`,
+        borderRadius: 16,
         boxShadow: "0 30px 80px rgba(0,0,0,0.55)",
         position: "relative",
         overflow: "hidden",
@@ -31,14 +30,13 @@ export const Card: React.FC<{
             position: "absolute",
             top: 0,
             left: 0,
-            padding: "10px 18px",
+            padding: "22px 30px 0",
             fontFamily: FONTS.mono,
-            fontWeight: 700,
-            fontSize: 24,
-            letterSpacing: 2,
-            color: COLORS.bg,
-            backgroundColor: accent,
-            borderBottomRightRadius: 12,
+            fontWeight: 500,
+            fontSize: 20,
+            letterSpacing: 4,
+            color: accent,
+            textTransform: "uppercase",
           }}
         >
           {label}
@@ -51,7 +49,7 @@ export const Card: React.FC<{
 
 /** Texto grande em Syne. */
 export const Title: React.FC<{ size?: number; color?: string; style?: React.CSSProperties; children?: React.ReactNode }> = ({ size = 96, color = COLORS.text, style, children }) => (
-  <div style={{ fontFamily: FONTS.title, fontWeight: 800, fontSize: size, lineHeight: 0.98, letterSpacing: -size * 0.03, color, ...style }}>{children}</div>
+  <div style={{ fontFamily: FONTS.title, fontWeight: 800, fontSize: size, lineHeight: 0.96, letterSpacing: -size * 0.035, color, ...style }}>{children}</div>
 );
 
 /** Texto mono. */

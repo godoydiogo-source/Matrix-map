@@ -1,5 +1,5 @@
 import { useCurrentFrame, useVideoConfig } from "remotion";
-import { COLORS, FONTS, W } from "../theme";
+import { COLORS, FONTS } from "../theme";
 import captions from "../data/captions.json";
 
 type Cap = { text: string; startMs: number; endMs: number; pageBreakAfter?: boolean };
@@ -18,11 +18,11 @@ const pages: Cap[][] = [];
 }
 
 /**
- * Legendas queimadas com destaque na palavra falada:
- * frase inteira em creme, palavra ativa em lima com uma barra fina lima por baixo.
+ * Legenda no padrão das peças jornalísticas: caixa escura arredondada na base,
+ * frase em branco bold; a palavra falada fica em verde-água, "CODE" em coral.
  * Fica dentro da zona segura (acima dos 250 px da base).
  */
-export const Captions: React.FC<{ bottom?: number; hideAfterFrame?: number }> = ({ bottom = 330, hideAfterFrame }) => {
+export const Captions: React.FC<{ bottom?: number; hideAfterFrame?: number }> = ({ bottom = 300, hideAfterFrame }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const ms = (frame / fps) * 1000;
@@ -33,61 +33,32 @@ export const Captions: React.FC<{ bottom?: number; hideAfterFrame?: number }> = 
   const isCode = (t: string) => t.replace(/[^\p{L}]/gu, "") === "CODE";
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        left: 0,
-        right: 0,
-        bottom,
-        display: "flex",
-        justifyContent: "center",
-        padding: `0 ${(W - 940) / 2}px`,
-        pointerEvents: "none",
-      }}
-    >
+    <div style={{ position: "absolute", left: 0, right: 0, bottom, display: "flex", justifyContent: "center", pointerEvents: "none" }}>
       <div
         style={{
+          maxWidth: 960,
+          backgroundColor: COLORS.capBox,
+          border: `1px solid ${COLORS.line}`,
+          borderRadius: 16,
+          padding: "22px 34px",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "6px 18px",
-          maxWidth: 940,
+          gap: "4px 14px",
           fontFamily: FONTS.title,
-          fontWeight: 800,
-          fontSize: 54,
-          lineHeight: 1.15,
-          letterSpacing: -0.5,
-          textTransform: "none",
+          fontWeight: 700,
+          fontSize: 46,
+          lineHeight: 1.18,
+          letterSpacing: -0.6,
+          textAlign: "center",
         }}
       >
         {page.map((c, i) => {
           const active = ms >= c.startMs && ms < c.endMs;
-          const past = ms >= c.endMs;
-          const color = isCode(c.text) ? COLORS.magenta : active ? COLORS.lime : past ? COLORS.text : "rgba(244,240,230,0.5)";
+          const color = isCode(c.text) ? COLORS.alert : active ? COLORS.accent : COLORS.text;
           return (
-            <span
-              key={i}
-              style={{
-                position: "relative",
-                color,
-                textShadow: "0 2px 18px rgba(8,6,14,0.9), 0 0 2px rgba(8,6,14,1)",
-                scale: active ? "1.04" : "1",
-                display: "inline-block",
-              }}
-            >
+            <span key={i} style={{ color, display: "inline-block" }}>
               {c.text}
-              <span
-                style={{
-                  position: "absolute",
-                  left: 0,
-                  right: 0,
-                  bottom: -6,
-                  height: 4,
-                  borderRadius: 2,
-                  backgroundColor: isCode(c.text) ? COLORS.magenta : COLORS.lime,
-                  opacity: active ? 1 : 0,
-                }}
-              />
             </span>
           );
         })}

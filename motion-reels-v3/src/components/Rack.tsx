@@ -30,7 +30,7 @@ export const Rack: React.FC<Props> = ({ litNames = [], litAll = 0, progressOf, s
         return (
           <div key={cat} style={{ display: "flex", flexDirection: "column", gap: 10 }}>
             {labels && (
-              <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: FONTS.mono, fontSize: 22, color: COLORS.violet, letterSpacing: 3 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: FONTS.mono, fontSize: 20, color: COLORS.muted, letterSpacing: 4 }}>
                 <span>{CAT_LABEL[cat]}</span>
                 <span style={{ color: COLORS.dim }}>· {repos.length}</span>
                 <div style={{ flex: 1, height: 1, backgroundColor: COLORS.line }} />
@@ -62,8 +62,8 @@ export const Rack: React.FC<Props> = ({ litNames = [], litAll = 0, progressOf, s
           style={{
             marginTop: 8,
             height: 74,
-            border: `2px dashed ${COLORS.violet}`,
-            borderRadius: 6,
+            border: `1px dashed ${COLORS.accentDim}`,
+            borderRadius: 10,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -71,7 +71,7 @@ export const Rack: React.FC<Props> = ({ litNames = [], litAll = 0, progressOf, s
             fontWeight: 700,
             fontSize: 30,
             letterSpacing: 6,
-            color: COLORS.text,
+            color: COLORS.accent,
             opacity: slot,
             width: 960,
           }}
