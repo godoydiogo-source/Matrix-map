@@ -1,0 +1,173 @@
+[
+ {
+  "text": "Todo",
+  "startMs": 200,
+  "endMs": 555,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "mundo",
+  "startMs": 555,
+  "endMs": 978,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "pede",
+  "startMs": 978,
+  "endMs": 1333,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "vídeo",
+  "startMs": 1333,
+  "endMs": 1756,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "pro",
+  "startMs": 1756,
+  "endMs": 2043,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "Claude",
+  "startMs": 2043,
+  "endMs": 2534,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "e",
+  "startMs": 2534,
+  "endMs": 2685,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "recebe",
+  "startMs": 2685,
+  "endMs": 3177,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "slide",
+  "startMs": 3177,
+  "endMs": 3600,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "animado.",
+  "startMs": 3600,
+  "endMs": 4159,
+  "timestampMs": null,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Eu",
+  "startMs": 4342,
+  "endMs": 4562,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "fui",
+  "startMs": 4562,
+  "endMs": 4848,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "atrás",
+  "startMs": 4848,
+  "endMs": 5272,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "do",
+  "startMs": 5272,
+  "endMs": 5490,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "que",
+  "startMs": 5490,
+  "endMs": 5776,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "faz",
+  "startMs": 5776,
+  "endMs": 6063,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "motion",
+  "startMs": 6063,
+  "endMs": 6554,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "de",
+  "startMs": 6554,
+  "endMs": 6773,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "verdade.",
+  "startMs": 6773,
+  "endMs": 7333,
+  "timestampMs": null,
+  "confidence": null,
+  "pageBreakAfter": true
+ },
+ {
+  "text": "Olha",
+  "startMs": 7516,
+  "endMs": 7871,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "o",
+  "startMs": 7871,
+  "endMs": 8022,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "que",
+  "startMs": 8022,
+  "endMs": 8309,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "eu",
+  "startMs": 8309,
+  "endMs": 8527,
+  "timestampMs": null,
+  "confidence": null
+ },
+ {
+  "text": "achei.",
+  "startMs": 8527,
+  "endMs": 8950,
+  "timestampMs": null,
+  "confidence": null,
+  "pageBreakAfter": true
+ }
+]

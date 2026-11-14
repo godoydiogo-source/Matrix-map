@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia · Motion no Claude Code: 20 repositórios | Manifesto Marketing</title>
+<meta name="description" content="O kit do vídeo: como instalar as 20 ferramentas open source que fazem o Claude Code dirigir motion graphics. 10 skills, 4 motores e 6 complementos, com passo a passo.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b0b0f;--surface:#121217;--line:#23232b;--text:#f3f4f6;--muted:#9ca3af;--soft:#e5e7eb;--accent:#2f4bff;--accent-2:#6d7fff;--ok:#34d399;--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--sans:'Schibsted Grotesk',system-ui,sans-serif}
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+  code{font-family:var(--mono);font-size:.9em;background:#1a1a22;border:1px solid var(--line);padding:.08em .4em;border-radius:6px;color:var(--soft)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  .kicker{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);margin-bottom:12px}
+  .hero{padding:80px 0 48px;border-bottom:1px solid var(--line)}
+  h1{font-size:clamp(40px,7vw,84px);line-height:.98;letter-spacing:-.03em;margin:0 0 20px;font-weight:800}
+  h1 em{font-style:normal;color:var(--accent)}
+  .lead{font-size:clamp(18px,2.2vw,22px);color:var(--soft);max-width:760px;margin:0 0 28px}
+  .status{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+  .status span{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;letter-spacing:.06em;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--soft)}
+  .status i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok)}
+  .status .off i{background:#f87171;box-shadow:0 0 10px #f87171}
+  .honest{display:flex;gap:12px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:16px 18px;max-width:780px;color:var(--soft)}
+  .honest p{margin:0} .honest strong{color:var(--text)}
+  .block{padding:64px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:clamp(26px,3.4vw,40px);letter-spacing:-.02em;line-height:1.1;margin:0 0 24px;max-width:820px}
+  .what{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .what div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .what b{display:block;font-size:18px;margin-bottom:6px} .what span{display:block;font-family:var(--mono);font-size:12px;color:var(--accent-2);letter-spacing:.1em;margin-bottom:8px} .what p{margin:0;color:var(--muted)}
+  .req{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .req div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px} .req h3{margin:0 0 12px;font-size:18px}
+  .req dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;color:var(--soft)} .req dt{color:var(--muted)} .req dd{margin:0}
+  .note{color:var(--muted);max-width:820px;margin-top:18px}
+  ol.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  ol.steps li{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;grid-template-columns:56px 1fr;gap:16px}
+  ol.steps .n{font-family:var(--mono);color:var(--accent);font-weight:700;font-size:14px;letter-spacing:.12em;padding-top:4px}
+  ol.steps h3{margin:0 0 8px;font-size:22px;letter-spacing:-.01em} ol.steps p{margin:0 0 6px;color:var(--muted)}
+  pre{margin:12px 0 0;background:#0e0e13;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto;font-family:var(--mono);font-size:13px;line-height:1.55;color:var(--soft)}
+  .grid{list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:border-color .15s}
+  .card:hover{border-color:var(--accent)}
+  .card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .num{font-family:var(--mono);color:var(--accent);font-weight:700;font-size:13px}
+  .slug{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .card h3{margin:0;font-size:22px;letter-spacing:-.01em} .card p{margin:0;color:var(--muted);font-size:15px;flex:1}
+  .card .cmd{margin:4px 0 0;white-space:nowrap}
+  .link{align-self:flex-start;font-size:14px;font-weight:600;color:var(--text);text-decoration:none;border-bottom:1px solid var(--accent)}
+  footer{padding:48px 0 80px;color:var(--muted);font-size:14px;max-width:820px}
+  @media (max-width:640px){.hero{padding:56px 0 36px} ol.steps li{grid-template-columns:1fr} .card h3{font-size:20px}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Guia · Kit de motion</span>
+    <h1>O Claude escreve código.<br><em>Agora dirige o motion.</em></h1>
+    <p class="lead">20 repositórios open source que ensinam o Claude Code a fazer motion graphics de verdade: 10 skills, 4 motores e 6 complementos. Aqui está o passo a passo para instalar o seu kit.</p>
+    <div class="status"><span><i></i>Skills instaladas</span><span><i></i>Motor renderizando</span><span><i></i>MP4 9:16 pronto</span><span class="off"><i></i>After Effects</span></div>
+    <div class="honest"><p><strong>Eu não sou o autor dessas ferramentas.</strong> São projetos open source de outros autores. Eu testei, separei por categoria e deixei a lista pronta, com uma linha fiel ao README de cada um.</p></div>
+  </div>
+</section>
+
+<section class="block" id="o-que-e">
+  <div class="wrap">
+    <span class="kicker">O que é</span>
+    <h2>Motion em código, não em timeline.</h2>
+    <p class="note" style="margin:0 0 24px">Em vez de arrastar keyframes num editor, você descreve o vídeo e o Claude escreve cada frame em código (React, HTML ou JS). As <b>skills</b> dão a ele o ofício: easing, timing, tipografia e um loop de revisão de frames. Os <b>motores</b> renderizam o resultado em MP4. Os <b>complementos</b> trazem princípios, catálogos e bibliotecas de animação.</p>
+    <div class="what">
+      <div><span>SKILLS · 10</span><b>O ofício</b><p>Regras de motion, pipelines de Reel, filme de lançamento a partir de uma URL, edição que corta silêncio.</p></div>
+      <div><span>MOTORES · 4</span><b>O render</b><p>Remotion (React), HyperFrames (HTML seekável), GSAP (timelines) e as skills oficiais do Remotion.</p></div>
+      <div><span>COMPLEMENTOS · 6</span><b>A base</b><p>Princípios de motion, catálogo curado de skills, Motion.dev e o player Lottie.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="requisitos">
+  <div class="wrap">
+    <span class="kicker">Requisitos</span>
+    <h2>O que a sua máquina precisa ter.</h2>
+    <div class="req">
+      <div><h3>Básico</h3><dl><dt>Claude Code</dt><dd>instalado e logado (<code>npm i -g @anthropic-ai/claude-code</code>)</dd><dt>Node.js</dt><dd>18 ou mais recente (22 recomendado)</dd><dt>Git</dt><dd>qualquer versão recente</dd><dt>Sistema</dt><dd>macOS, Linux ou Windows com WSL</dd></dl></div>
+      <div><h3>Para renderizar</h3><dl><dt>Chrome</dt><dd>o Remotion e o HyperFrames baixam o próprio navegador headless</dd><dt>FFmpeg</dt><dd>só para as skills HTML + Playwright (<code>brew install ffmpeg</code> no Mac)</dd><dt>Disco</dt><dd>2 a 3 GB livres para navegador e dependências</dd><dt>Memória</dt><dd>8 GB de RAM dão conta de um Reel de 1 minuto</dd></dl></div>
+    </div>
+    <p class="note">Nenhuma ferramenta da lista exige After Effects. O Remotion é gratuito para pessoas e empresas pequenas; empresas maiores precisam de licença própria (veja o repositório). As demais são MIT ou licenças abertas equivalentes; confira cada README antes de uso comercial.</p>
+  </div>
+</section>
+
+<section class="block" id="passo-a-passo">
+  <div class="wrap">
+    <span class="kicker">Passo a passo</span>
+    <h2>Da pasta vazia ao Reel renderizado.</h2>
+    <ol class="steps">
+      <li><span class="n">01</span><div><h3>Abra o Claude Code numa pasta de projeto</h3><p>Pode ser uma pasta nova. O Claude trabalha dentro dela e guarda ali as skills instaladas.</p><pre>mkdir meu-reel && cd meu-reel
+claude</pre></div></li>
+      <li><span class="n">02</span><div><h3>Instale as skills da lista</h3><p>O instalador <code>skills</code> baixa a skill para <code>.agents/skills/</code> e cria o atalho que o Claude Code lê. Comece pelas skills oficiais do Remotion e por uma skill de motion; os cards abaixo têm o comando de cada uma.</p><pre>npx skills add remotion-dev/skills
+npx skills add whaleyxbt/claude-motion
+npx skills add AbubakrChan/product-launch-motion</pre></div></li>
+      <li><span class="n">03</span><div><h3>Escolha o motor</h3><p>Remotion quando você quer React e um projeto que vive no tempo. HyperFrames quando quer HTML puro renderizado em MP4. GSAP entra nas timelines dos dois.</p><pre># Remotion: cria o projeto e abre o preview
+npx create-video@latest --yes --blank meu-reel-remotion
+cd meu-reel-remotion && npm start
+
+# HyperFrames: instala a skill e o CLI de render
+npx skills add heygen-com/hyperframes</pre></div></li>
+      <li><span class="n">04</span><div><h3>Descreva o vídeo que você quer</h3><p>Formato, duração, o que acontece em cada cena, tom e call to action. Quanto mais concreto, melhor o primeiro corte.</p><pre>Faz um Reel 9:16, 30 s, em Remotion, apresentando o produto X.
+Hook com tipografia cinética, 3 benefícios em cards, CTA no fim.
+Fundo escuro, uma cor de destaque, SFX nos cortes. Renderiza o MP4.</pre></div></li>
+      <li><span class="n">05</span><div><h3>Revise pelos frames, não pelo "parece bom"</h3><p>Peça um contact sheet (um frame de cada cena) e corrija o que estiver cortado, ilegível ou fora do tempo. As skills de motion já fazem esse loop: render, inspecionar, corrigir.</p><pre>Renderiza 8 frames espalhados pelo vídeo e me mostra numa grade.
+Confere texto cortado, legibilidade no celular e zona segura do Reels.</pre></div></li>
+      <li><span class="n">06</span><div><h3>Exporte no formato das redes</h3><p>1080×1920, 30 fps, H.264, yuv420p, áudio AAC 48 kHz e faststart. A skill <code>reel-export</code> do pack do Charlie Hills faz a checagem com ffprobe.</p><pre>npx remotion render MeuReel out/reel.mp4 --codec h264 --crf 18</pre></div></li>
+    </ol>
+    <p class="note" style="margin-top:24px">O pulo do gato do vídeo: com o <b>Product Launch Motion</b> instalado, cole a URL do seu site e peça um filme de lançamento. A v2 é music-first (springs, cursor que conduz a ação, SFX no beat, 60 fps). A versão com narração fica em <code>legacy/</code>: <code>npx skills add AbubakrChan/product-launch-motion/legacy</code>.</p>
+  </div>
+</section>
+
+    <section class="block" id="skills">
+      <div class="wrap">
+        <span class="kicker">Skills · 10</span>
+        <h2>Ensinam o Claude Code a dirigir motion: regras de timing, loops de revisão de frames, pipelines prontos.</h2>
+        <ul class="grid">
+        <li class="card">
+          <div class="card-top"><span class="num">01</span><span class="slug">whaleyxbt/claude-motion</span></div>
+          <h3>claude-motion</h3>
+          <p>Toolkit de motion design para agentes: gosto e regras com número (easing, spring, tipografia), loop de revisão por contact sheet de frames, motor de som em Python e um segundo pipeline que renderiza simulações web (HTML) frame a frame em vídeo 60 fps.</p>
+          <pre class="cmd">npx skills add whaleyxbt/claude-motion</pre>
+          <a class="link" href="https://github.com/whaleyxbt/claude-motion" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">02</span><span class="slug">howseen-ai/claude-motion-design</span></div>
+          <h3>claude-motion-design</h3>
+          <p>Skill para vídeos de motion em código puro (HTML + Playwright + ffmpeg), sem After Effects e sem licença Remotion. Tem um modo remake.</p>
+          <pre class="cmd">npx skills add howseen-ai/claude-motion-design</pre>
+          <a class="link" href="https://github.com/howseen-ai/claude-motion-design" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">03</span><span class="slug">charlie947/motion-graphics-skills</span></div>
+          <h3>motion-graphics-skills</h3>
+          <p>Pack de skills para motion de lançamento em código (brief, launch video, explainer, chart, reel-export etc.). O README atual lista 15 skills.</p>
+          <pre class="cmd">npx skills add charlie947/motion-graphics-skills</pre>
+          <a class="link" href="https://github.com/charlie947/motion-graphics-skills" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">04</span><span class="slug">haidrrrry/claude-remotion-skill</span></div>
+          <h3>claude-remotion-skill</h3>
+          <p>Skill que ensina o Claude a criar e editar motion graphics com Remotion: springs, legendas sincronizadas, som e o loop render → inspecionar frames → corrigir.</p>
+          <pre class="cmd">npx skills add haidrrrry/claude-remotion-skill</pre>
+          <a class="link" href="https://github.com/haidrrrry/claude-remotion-skill" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">05</span><span class="slug">t3knobox/klik-anim-skill-creation</span></div>
+          <h3>klik-anim-skill-creation</h3>
+          <p>Três skills para motion com Remotion: <code>klik-anim</code> (leis de animação no plano), <code>klik-cam</code> (câmera) e <code>klik-remotion-method</code> (pipeline de ponta a ponta).</p>
+          <pre class="cmd">npx skills add t3knobox/klik-anim-skill-creation</pre>
+          <a class="link" href="https://github.com/t3knobox/klik-anim-skill-creation" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">06</span><span class="slug">Sunwood-ai-labs/hyperframes-motion-reel-skill</span></div>
+          <h3>hyperframes-motion-reel-skill</h3>
+          <p>Skill de showreel no HyperFrames (HTML + GSAP + SVG/Canvas), cortado no beat (padrão 120 BPM / 60 fps) até o MP4.</p>
+          <pre class="cmd">npx skills add Sunwood-ai-labs/hyperframes-motion-reel-skill</pre>
+          <a class="link" href="https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">07</span><span class="slug">AbubakrChan/product-launch-motion</span></div>
+          <h3>Product Launch Motion</h3>
+          <p>Skill de filme de lançamento a partir da URL do site. A v2 (atual) é music-first: HTML, springs, cursor que conduz a ação, SFX no beat, 60 fps com motion blur. A versão com narração (v1: VO + GSAP + HyperFrames) está na pasta <code>legacy/</code> e instala à parte: <code>npx skills add AbubakrChan/product-launch-motion/legacy</code>.</p>
+          <pre class="cmd">npx skills add AbubakrChan/product-launch-motion</pre>
+          <a class="link" href="https://github.com/AbubakrChan/product-launch-motion" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">08</span><span class="slug">cth9191/animate</span></div>
+          <h3>animate</h3>
+          <p>Animação procedimental em um único arquivo, com 7 estilos prontos (cut paper, riso, math, pixel etc.) ou um look batido a partir de referências; música no beat; screenshots reais do produto; vários formatos a partir da mesma peça.</p>
+          <pre class="cmd">npx skills add cth9191/animate</pre>
+          <a class="link" href="https://github.com/cth9191/animate" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">09</span><span class="slug">iart-ai/motion-design-skills</span></div>
+          <h3>motion-design-skills</h3>
+          <p>Fundamentos e motores como skills instaláveis: timing, tipografia, cor, composição, After Effects, Remotion, logo e backgrounds.</p>
+          <pre class="cmd">npx skills add iart-ai/motion-design-skills</pre>
+          <a class="link" href="https://github.com/iart-ai/motion-design-skills" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">10</span><span class="slug">nateherkai/herk-edit-kit</span></div>
+          <h3>Herk Edit Kit</h3>
+          <p>De Nate Herk (antes se chamava HyperFrames Student Kit). Edita vídeos, Reels e Shorts com Codex ou Claude Code: 15 skills, cortes a partir da transcrição (silêncio, erros), storytelling, 406 cards de motion e templates HyperFrames.</p>
+          <pre class="cmd">npx skills add nateherkai/herk-edit-kit</pre>
+          <a class="link" href="https://github.com/nateherkai/herk-edit-kit" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block" id="motores">
+      <div class="wrap">
+        <span class="kicker">Motores · 4</span>
+        <h2>Renderizam de fato: HTML ou React viram MP4.</h2>
+        <ul class="grid">
+        <li class="card">
+          <div class="card-top"><span class="num">11</span><span class="slug">heygen-com/hyperframes</span></div>
+          <h3>HyperFrames</h3>
+          <p>Motor open source: escreve HTML (com animação seekable) e renderiza MP4. Feito para agentes; tem skills e CLI próprios.</p>
+          <pre class="cmd">npx skills add heygen-com/hyperframes</pre>
+          <a class="link" href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">12</span><span class="slug">remotion-dev/remotion</span></div>
+          <h3>Remotion</h3>
+          <p>Motor para fazer vídeos programaticamente com React.</p>
+          <pre class="cmd">npx create-video@latest</pre>
+          <a class="link" href="https://github.com/remotion-dev/remotion" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">13</span><span class="slug">remotion-dev/skills</span></div>
+          <h3>Remotion Skills</h3>
+          <p>Skills oficiais do agente Remotion (best practices, create, markup, render, captions, docs etc.). É o pacote oficial de skills que acompanha o Remotion, não um segundo renderer.</p>
+          <pre class="cmd">npx skills add remotion-dev/skills</pre>
+          <a class="link" href="https://github.com/remotion-dev/skills" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">14</span><span class="slug">greensock/GSAP</span></div>
+          <h3>GSAP</h3>
+          <p>Biblioteca JavaScript de animação (tweens, timelines) para a web moderna.</p>
+          <pre class="cmd">npm install gsap</pre>
+          <a class="link" href="https://github.com/greensock/GSAP" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block" id="complementos">
+      <div class="wrap">
+        <span class="kicker">Complementos · 6</span>
+        <h2>Princípios, catálogos e bibliotecas de animação que os motores usam.</h2>
+        <ul class="grid">
+        <li class="card">
+          <div class="card-top"><span class="num">15</span><span class="slug">frankxai/awesome-motion-design-agent-skills</span></div>
+          <h3>awesome-motion-design-agent-skills</h3>
+          <p>Catálogo curado + 5 skills instaláveis (entre elas <code>motion-director</code>, <code>remotion-video-agent</code>, <code>web-motion-auditor</code>) para agentes, cobrindo GSAP, Motion, Remotion, Lottie, Rive e QA de motion.</p>
+          <pre class="cmd">npx skills add frankxai/awesome-motion-design-agent-skills</pre>
+          <a class="link" href="https://github.com/frankxai/awesome-motion-design-agent-skills" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">16</span><span class="slug">LottieFiles/motion-design-skill</span></div>
+          <h3>motion-design-skill (LottieFiles)</h3>
+          <p>Princípios universais de motion para agentes: timing, easing, coreografia, princípios da Disney adaptados para UI. Não é o player Lottie.</p>
+          <pre class="cmd">npx skills add LottieFiles/motion-design-skill</pre>
+          <a class="link" href="https://github.com/LottieFiles/motion-design-skill" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">17</span><span class="slug">Barty-Bart/motion-graphics</span></div>
+          <h3>motion-graphics (Barty-Bart)</h3>
+          <p>Skills de edição/motion para Claude Code, cada uma com um trabalho: B-roll no tempo da fala, separação de objeto, explainers e SFX no beat.</p>
+          <pre class="cmd">npx skills add Barty-Bart/motion-graphics</pre>
+          <a class="link" href="https://github.com/Barty-Bart/motion-graphics" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">18</span><span class="slug">199-biotechnologies/motion-dev-animations-skill</span></div>
+          <h3>motion-dev-animations-skill</h3>
+          <p>Skill de animações web com Motion.dev (ex-Framer Motion): springs, scroll, gestos, alvo de 120 fps na interface.</p>
+          <pre class="cmd">npx skills add 199-biotechnologies/motion-dev-animations-skill</pre>
+          <a class="link" href="https://github.com/199-biotechnologies/motion-dev-animations-skill" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">19</span><span class="slug">motiondivision/motion</span></div>
+          <h3>Motion</h3>
+          <p>Biblioteca de animação para React, JavaScript e Vue (o sucessor do Framer Motion).</p>
+          <pre class="cmd">npm install motion</pre>
+          <a class="link" href="https://github.com/motiondivision/motion" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        <li class="card">
+          <div class="card-top"><span class="num">20</span><span class="slug">airbnb/lottie-web</span></div>
+          <h3>Lottie (lottie-web)</h3>
+          <p>Player que renderiza na web (e em outras plataformas) animações do After Effects exportadas em JSON via Bodymovin.</p>
+          <pre class="cmd">npm install lottie-web</pre>
+          <a class="link" href="https://github.com/airbnb/lottie-web" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+        </li>
+        </ul>
+      </div>
+    </section>
+<footer>
+  <div class="wrap">
+    <p>Lista conferida nos READMEs em 13/11/2026. Cada repositório tem autoria e licença próprias. O Herk Edit Kit se chamava HyperFrames Student Kit; o pack <code>remotion-dev/skills</code> é o conjunto oficial de skills que acompanha o Remotion, não um segundo renderizador.</p>
+    <p>Quer a lista no direct? Comenta <code>CODE</code> no Reel que eu te mando.</p>
+  </div>
+</footer>
+</body>
+</html>

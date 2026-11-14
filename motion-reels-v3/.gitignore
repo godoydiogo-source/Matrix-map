@@ -1,0 +1,6 @@
+node_modules/
+out/frames/
+out/*.mp4
+.remotion/
+public/insert/*.mp4
+public/insert/*.wav
